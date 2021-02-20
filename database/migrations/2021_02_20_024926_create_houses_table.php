@@ -17,7 +17,8 @@ class CreateHousesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('type');
-            $table->string('location');
+            $table->string('city');
+            $table->string('state');
             $table->bigInteger('phone');
             $table->boolean('busline');
             $table->timestamps();

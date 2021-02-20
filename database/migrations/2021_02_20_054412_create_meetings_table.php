@@ -18,7 +18,7 @@ class CreateMeetingsTable extends Migration
             $table->string('name');
             $table->string('type');
             $table->string('day');
-            $table->string('time');
+            $table->time('time');
             $table->string('address');
             $table->string('city');
             $table->string('state');

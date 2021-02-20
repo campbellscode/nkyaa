@@ -39,9 +39,17 @@ class MeetingCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        CRUD::column('created_at');
-        CRUD::column('id');
-        CRUD::column('updated_at');
+        //CRUD::column('id');
+        CRUD::column('name');
+        CRUD::column('type');
+        CRUD::column('day');
+        CRUD::column('time');
+        CRUD::column('address');
+        CRUD::column('city');
+        CRUD::column('state');
+        CRUD::column('zip');
+        //CRUD::field('created_at');
+        //CRUD::field('updated_at');
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:
@@ -60,9 +68,17 @@ class MeetingCrudController extends CrudController
     {
         CRUD::setValidation(MeetingRequest::class);
 
-        CRUD::field('created_at');
-        CRUD::field('id');
-        CRUD::field('updated_at');
+        //CRUD::field('id');
+        CRUD::field('name');
+        CRUD::field('type');
+        CRUD::field('day');
+        CRUD::field('time');
+        CRUD::field('address');
+        CRUD::field('city');
+        CRUD::field('state');
+        CRUD::field('zip');
+        //CRUD::field('created_at');
+        //CRUD::field('updated_at');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:

@@ -39,14 +39,15 @@ class HouseCrudController extends CrudController
      */
     protected function setupListOperation()
     {
-        CRUD::column('busline');
-        CRUD::column('created_at');
-        CRUD::column('id');
-        CRUD::column('location');
+        //CRUD::column('id');
         CRUD::column('name');
-        CRUD::column('phone');
         CRUD::column('type');
-        CRUD::column('updated_at');
+        CRUD::column('city');
+        CRUD::column('state');
+        CRUD::column('phone');
+        CRUD::column('busline');
+        //CRUD::column('created_at');
+        //CRUD::column('updated_at');
 
         /**
          * Columns can be defined using the fluent syntax or array syntax:
@@ -65,14 +66,15 @@ class HouseCrudController extends CrudController
     {
         CRUD::setValidation(HouseRequest::class);
 
-        CRUD::field('busline');
-        CRUD::field('created_at');
-        CRUD::field('id');
-        CRUD::field('location');
+        //CRUD::field('id');
         CRUD::field('name');
-        CRUD::field('phone');
         CRUD::field('type');
-        CRUD::field('updated_at');
+        CRUD::field('city');
+        CRUD::field('state');
+        CRUD::field('phone');
+        CRUD::field('busline');
+        //CRUD::field('created_at');
+        //CRUD::field('updated_at');
 
         /**
          * Fields can be defined using the fluent syntax or array syntax:
