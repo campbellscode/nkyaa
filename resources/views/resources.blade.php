@@ -1,11 +1,11 @@
 @extends('layouts.navbar')
 
-@section('title', 'Home')
+@section('title', 'Resources')
 
 @section('navbar')
     @parent
 @stop
 
 @section('content')
-    <h1>Welcome Page!</h1>
+    <h1>Resources Page!</h1>
 @stop
