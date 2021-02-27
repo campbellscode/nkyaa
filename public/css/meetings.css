@@ -1,0 +1,17 @@
+body {
+    background-image: url("/images/holding-hands-1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .white-bg {
+      background-color: white;
+  }
+
+  .opacity-50 {
+      opacity: 0.85;
+  }
+
