@@ -30,4 +30,8 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'google_places' => [
+        'key' => 'AIzaSyCJcb2Zp3jdF6to07EcaIQz3Auo9I79JDs'
+    ],
+
 ];

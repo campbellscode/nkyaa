@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/meetings', function () {
+Route::get('/meetings', 'MeetingsController@index', function () {
     return view('meetings');
 });
 
