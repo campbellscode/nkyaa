@@ -64,6 +64,10 @@ Route::get('/literature', function () {
     return view('literature');
 });
 
+Route::get('/requests', function () {
+    return view('requests');
+});
+
 Route::get('/contact', function () {
     return view('contact');
 });

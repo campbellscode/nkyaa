@@ -48,7 +48,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/contact">Contact</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <!--<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Dropdown
                             </a>
@@ -59,7 +59,7 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </li>
-                        <!--<li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link disabled" href="#">Disabled</a>
                         </li>-->
                     </ul>
