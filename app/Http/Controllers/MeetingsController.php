@@ -11,11 +11,15 @@ class MeetingsController extends Controller
     //
     public function index()
     {
+        //$strMeeting = "meetings";
+
         // Query and get all meetings from the Meeting.php model and set to meetings variable.
         $meetings = Meeting::all();
 
         // Return the meetings view and pass the $meetings variable to the view.
         return view('meetings', ['meetings' => $meetings]);
+        //return view('meetings')->with(compact('strMeeting', 'meetings'));
+
     }
 
     public function filterDaily() {
