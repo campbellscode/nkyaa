@@ -21,6 +21,33 @@ Route::get('/meetings', 'MeetingsController@index', function () {
     return view('meetings');
 });
 
+// Meeting day filters.
+Route::get('/meetings/filter/daily', 'MeetingsController@filterDaily', function () {
+    return view('meetings');
+});
+Route::get('/meetings/filter/mon', 'MeetingsController@filterMon', function () {
+    return view('meetings');
+});
+Route::get('/meetings/filter/tue', 'MeetingsController@filterTue', function () {
+    return view('meetings');
+});
+Route::get('/meetings/filter/wed', 'MeetingsController@filterWed', function () {
+    return view('meetings');
+});
+Route::get('/meetings/filter/thu', 'MeetingsController@filterThu', function () {
+    return view('meetings');
+});
+Route::get('/meetings/filter/fri', 'MeetingsController@filterFri', function () {
+    return view('meetings');
+});
+Route::get('/meetings/filter/sat', 'MeetingsController@filterSat', function () {
+    return view('meetings');
+});
+Route::get('/meetings/filter/sun', 'MeetingsController@filterSun', function () {
+    return view('meetings');
+});
+
+
 Route::get('/events', function () {
     return view('events');
 });

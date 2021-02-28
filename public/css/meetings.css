@@ -4,14 +4,22 @@ body {
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .white-bg {
       background-color: white;
   }
 
-  .opacity-50 {
-      opacity: 0.85;
+  h1 {
+      color: black;
   }
+
+  h1:hover {
+    color: #6cb2eb !important;
+}
+
+.opacity-85 {
+    opacity: 0.85;
+}
 

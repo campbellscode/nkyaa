@@ -14,6 +14,16 @@ class Meeting extends Model
     //protected $fillable = ['name','type', 'day', 'time', 'address', 'city', 'state', 'zip']; 
     //protected $table = 'meetings';
     protected $guarded = [];
+
+
+
+    // public function monday() {
+    //     // do something
+    //     $model = Model::all()->where('name', "Jaywalker's" )->get();
+
+    //     View::make('view')->withModel($model);
+    // }
+
     //protected $primaryKey = 'id';
     //public $timestamps = true;
 
