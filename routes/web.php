@@ -25,25 +25,25 @@ Route::get('/meetings', 'MeetingsController@index', function () {
 Route::get('/meetings/filter/daily', 'MeetingsController@filterDaily', function () {
     return view('meetings');
 });
-Route::get('/meetings/filter/mon', 'MeetingsController@filterMon', function () {
+Route::get('/meetings/filter/Monday', 'MeetingsController@filterMon', function () {
     return view('meetings');
 });
-Route::get('/meetings/filter/tue', 'MeetingsController@filterTue', function () {
+Route::get('/meetings/filter/Tuesday', 'MeetingsController@filterTue', function () {
     return view('meetings');
 });
-Route::get('/meetings/filter/wed', 'MeetingsController@filterWed', function () {
+Route::get('/meetings/filter/Wednesday', 'MeetingsController@filterWed', function () {
     return view('meetings');
 });
-Route::get('/meetings/filter/thu', 'MeetingsController@filterThu', function () {
+Route::get('/meetings/filter/Thursday', 'MeetingsController@filterThu', function () {
     return view('meetings');
 });
-Route::get('/meetings/filter/fri', 'MeetingsController@filterFri', function () {
+Route::get('/meetings/filter/Friday', 'MeetingsController@filterFri', function () {
     return view('meetings');
 });
-Route::get('/meetings/filter/sat', 'MeetingsController@filterSat', function () {
+Route::get('/meetings/filter/Saturday', 'MeetingsController@filterSat', function () {
     return view('meetings');
 });
-Route::get('/meetings/filter/sun', 'MeetingsController@filterSun', function () {
+Route::get('/meetings/filter/Sunday', 'MeetingsController@filterSun', function () {
     return view('meetings');
 });
 

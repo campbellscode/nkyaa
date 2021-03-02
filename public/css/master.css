@@ -5,15 +5,13 @@
   top: 0;
   width: 100%;
   z-index: 999;
-  }
+}
 
-
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    width: 100%;
-  }
+.sticky {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+}
   
 

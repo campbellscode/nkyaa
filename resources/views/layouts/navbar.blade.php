@@ -1,3 +1,8 @@
+<?php 
+    date_default_timezone_set('US/Eastern');
+    $weekday = now()->format('l'); 
+?>
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -28,7 +33,7 @@
                             <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/meetings">Meetings</a>
+                            <a class="nav-link" href="/meetings/filter/<?php echo $weekday; ?>">Meetings</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/events">Events</a>

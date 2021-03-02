@@ -14,18 +14,14 @@ body {
     background-size: cover;
     height: 100%;
     overflow-x: hidden;
-  }
+}
 
-  .white-bg {
+.white-bg {
       background-color: white;
-  }
+}
 
-  h1 {
+h1 {
       color: black;
-  }
-
-  h1:hover {
-    color: #6cb2eb !important;
 }
 
 .opacity-85 {
@@ -43,7 +39,7 @@ body {
     border-radius: 15px;
 }
 
-  .k-button:hover {
+.k-button:hover {
       background-color: black !important;
 }
   
@@ -52,4 +48,7 @@ body {
     transform: translateY(4px);
 }
 
+.card-shadow {
+    box-shadow: 5px 5px 5px #6cb2eb;
+}
 

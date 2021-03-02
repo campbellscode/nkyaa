@@ -19,20 +19,21 @@
 
     @section('content')
     <div id="meetingsbar">
-        <div class="row pt-auto pl-5 white-bg">
+        <div class="row pt-2 pl-5 white-bg">
             <div class="col-sm-12">
-                <a class="nav-link" href="/meetings"><h1>Meetings!</h1></a><br>
+                <h1>Meetings! - {{ $meeting_day }}</h1><br>
                 <div class="row">
                     <div class="col-sm-auto d-block">
                         <div class="btn-group" role="group" aria-label="Basic example">
+                            <a href="/meetings" class="k-button btn btn-xs btn-info pull-left">All</a><br>
                             <a href="/meetings/filter/daily" class="k-button btn btn-xs btn-info pull-left">Daily</a><br>
-                            <a href="/meetings/filter/mon" class="k-button btn btn-xs btn-info pull-left">Mon</a><br>
-                            <a href="/meetings/filter/tue" class="k-button btn btn-xs btn-info pull-left">Tue</a><br>
-                            <a href="/meetings/filter/wed" class="k-button btn btn-xs btn-info pull-left">Wed</a><br>
-                            <a href="/meetings/filter/thu" class="k-button btn btn-xs btn-info pull-left">Thu</a><br>
-                            <a href="/meetings/filter/fri" class="k-button btn btn-xs btn-info pull-left">Fri</a><br>
-                            <a href="/meetings/filter/sat" class="k-button btn btn-xs btn-info pull-left">Sat</a><br>
-                            <a href="/meetings/filter/sun" class="k-button btn btn-xs btn-info pull-left">Sun</a><br>
+                            <a href="/meetings/filter/Monday" class="k-button btn btn-xs btn-info pull-left">Mo</a><br>
+                            <a href="/meetings/filter/Tuesday" class="k-button btn btn-xs btn-info pull-left">Tu</a><br>
+                            <a href="/meetings/filter/Wednesday" class="k-button btn btn-xs btn-info pull-left">We</a><br>
+                            <a href="/meetings/filter/Thursday" class="k-button btn btn-xs btn-info pull-left">Th</a><br>
+                            <a href="/meetings/filter/Friday" class="k-button btn btn-xs btn-info pull-left">Fr</a><br>
+                            <a href="/meetings/filter/Saturday" class="k-button btn btn-xs btn-info pull-left">Sa</a><br>
+                            <a href="/meetings/filter/Sunday" class="k-button btn btn-xs btn-info pull-left">Su</a><br>
                         </div>
                     </div>
                     <div class="col-sm-auto d-none d-md-block">
@@ -70,9 +71,9 @@
 
         <div class="row ml-5">
             @foreach ($meetings as $meeting)
-                <div class="card opacity-85 mr-1 mb-1" style="width: 18rem;">
+                <div class="card opacity-85 mr-3 mb-3" style="width: 18rem;">
                     <!-- <img class="card-img-top" src="{{url('/images/holding-hands.jpg')}}" alt="Card image cap"> -->
-                    <div class="card-body">
+                    <div class="card-body card-shadow">
                         <h5 class="card-title">{{ $meeting->name }}</h5>
                         <p class="card-text">
                             <li>{{ $meeting->type }}</li>
