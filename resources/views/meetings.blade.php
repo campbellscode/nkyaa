@@ -24,32 +24,32 @@
                 <h1>Meetings! - {{ $meeting_day }}</h1><br>
                 <div class="row">
                     <div class="col-sm-auto d-block">
-                        <div class="btn-group" role="group" aria-label="Basic example">
-                            <a href="/meetings" class="k-button btn btn-xs btn-info pull-left">All</a><br>
-                            <a href="/meetings/filter/daily" class="k-button btn btn-xs btn-info pull-left">Daily</a><br>
-                            <a href="/meetings/filter/Monday" class="k-button btn btn-xs btn-info pull-left">Mo</a><br>
-                            <a href="/meetings/filter/Tuesday" class="k-button btn btn-xs btn-info pull-left">Tu</a><br>
-                            <a href="/meetings/filter/Wednesday" class="k-button btn btn-xs btn-info pull-left">We</a><br>
-                            <a href="/meetings/filter/Thursday" class="k-button btn btn-xs btn-info pull-left">Th</a><br>
-                            <a href="/meetings/filter/Friday" class="k-button btn btn-xs btn-info pull-left">Fr</a><br>
-                            <a href="/meetings/filter/Saturday" class="k-button btn btn-xs btn-info pull-left">Sa</a><br>
-                            <a href="/meetings/filter/Sunday" class="k-button btn btn-xs btn-info pull-left">Su</a><br>
+                        <div id="elem" class="btn-group" role="group" aria-label="Basic example">
+                            <a id="elem" href="/meetings" class="btn btn-xs btn-info pull-left">All</a><br>
+                            <a href="/meetings/filter/daily" class="btn btn-xs btn-info pull-left">Daily</a><br>
+                            <a href="/meetings/filter/Monday" class="btn btn-xs btn-info pull-left">Mo</a><br>
+                            <a href="/meetings/filter/Tuesday" class="btn btn-xs btn-info pull-left">Tu</a><br>
+                            <a href="/meetings/filter/Wednesday" class="btn btn-xs btn-info pull-left">We</a><br>
+                            <a href="/meetings/filter/Thursday" class="btn btn-xs btn-info pull-left">Th</a><br>
+                            <a href="/meetings/filter/Friday" class="btn btn-xs btn-info pull-left">Fr</a><br>
+                            <a href="/meetings/filter/Saturday" class="btn btn-xs btn-info pull-left">Sa</a><br>
+                            <a href="/meetings/filter/Sunday" class="btn btn-xs btn-info pull-left">Su</a><br>
                         </div>
                     </div>
                     <div class="col-sm-auto d-none d-md-block">
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <a href="/meetings/filter/daily" class="k-button btn btn-xs btn-info pull-right">In-Person</a><br>
-                            <a href="/meetings/filter/mon" class="k-button btn btn-xs btn-info pull-left">Online</a><br>
+                            <a href="/meetings/filter/daily" class="btn btn-xs btn-info pull-right">In-Person</a><br>
+                            <a href="/meetings/filter/mon" class="btn btn-xs btn-info pull-left">Online</a><br>
                         </div>            
                     </div>
                     <div class="col-sm-auto d-none d-lg-none d-xl-block">
                         <div class="btn-group" role="group" aria-label="Basic example">
-                            <a href="/meetings/filter/mon" class="k-button btn btn-xs btn-info pull-left">Beginner</a><br>
-                            <a href="/meetings/filter/daily" class="k-button btn btn-xs btn-info pull-right">Discussion</a><br>
-                            <a href="/meetings/filter/mon" class="k-button btn btn-xs btn-info pull-left">Ticket</a><br>
-                            <a href="/meetings/filter/daily" class="k-button btn btn-xs btn-info pull-right">Big Book</a><br>
-                            <a href="/meetings/filter/mon" class="k-button btn btn-xs btn-info pull-left">12 & 12</a><br>
-                            <a href="/meetings/filter/daily" class="k-button btn btn-xs btn-info pull-right">Speaker</a><br>
+                            <a href="/meetings/filter/mon" class="btn btn-xs btn-info pull-left">Beginner</a><br>
+                            <a href="/meetings/filter/daily" class="btn btn-xs btn-info pull-right">Discussion</a><br>
+                            <a href="/meetings/filter/mon" class="btn btn-xs btn-info pull-left">Ticket</a><br>
+                            <a href="/meetings/filter/daily" class="btn btn-xs btn-info pull-right">Big Book</a><br>
+                            <a href="/meetings/filter/mon" class="btn btn-xs btn-info pull-left">12 & 12</a><br>
+                            <a href="/meetings/filter/daily" class="btn btn-xs btn-info pull-right">Speaker</a><br>
                         </div>            
                     </div>
                 </div>
@@ -84,11 +84,11 @@
                             <li>{{ $meeting->state }}</li>
                             <li>{{ $meeting->zip }}</li>                
                         </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="show-button btn btn-primary">Show up, Show out!</a>
                     </div>
                 </div>
             @endforeach
         </div>
-        @stop
+        @stop     
     </body>
 </html>

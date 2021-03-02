@@ -17,18 +17,22 @@ body {
 }
 
 .white-bg {
-      background-color: white;
+    background-color: white;
 }
 
 h1 {
-      color: black;
+    color: black;
 }
 
 .opacity-85 {
     opacity: 0.85;
 }
 
-.k-button {
+.card-shadow {
+    box-shadow: 5px 5px 5px #6cb2eb;
+}
+
+.btn.btn-info {
     color: #212529;
     background-color: #6cb2eb;
     cursor: pointer;
@@ -39,16 +43,20 @@ h1 {
     border-radius: 15px;
 }
 
-.k-button:hover {
-      background-color: black !important;
-}
-  
-.k-button:active {
-    background-color: black !important;
+.btn.btn-info:hover, .btn.btn-info:focus, .btn.btn-info:active  { 
+    background-color: black;
     transform: translateY(4px);
 }
 
-.card-shadow {
-    box-shadow: 5px 5px 5px #6cb2eb;
+/*.btn.btn-primary {
+    color: black;
+    background-color: #6cb2eb;
+    opacity: 1;
 }
+
+.btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
+    color: white;
+    background-color: black;
+    opacity: 1;
+} */ 
 
