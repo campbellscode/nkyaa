@@ -52,7 +52,7 @@ Route::get('/events', function () {
     return view('events');
 });
 
-Route::get('/houses', function () {
+Route::get('/houses', 'HousesController@index', function () {
     return view('houses');
 });
 

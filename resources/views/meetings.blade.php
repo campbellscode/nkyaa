@@ -36,7 +36,7 @@
                             <a href="/meetings/filter/Sunday" class="btn btn-xs btn-info pull-left">Su</a><br>
                         </div>
                     </div>
-                    <div class="col-sm-auto d-none d-md-block">
+                    <!--<div class="col-sm-auto d-none d-md-block">
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <a href="/meetings/filter/daily" class="btn btn-xs btn-info pull-right">In-Person</a><br>
                             <a href="/meetings/filter/mon" class="btn btn-xs btn-info pull-left">Online</a><br>
@@ -51,7 +51,7 @@
                             <a href="/meetings/filter/mon" class="btn btn-xs btn-info pull-left">12 & 12</a><br>
                             <a href="/meetings/filter/daily" class="btn btn-xs btn-info pull-right">Speaker</a><br>
                         </div>            
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
