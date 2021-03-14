@@ -56,6 +56,23 @@ Route::get('/houses', 'HousesController@index', function () {
     return view('houses');
 });
 
+// Sober Living house filters.
+Route::get('/houses/filter/mens', 'HousesController@filterMens', function () {
+    return view('houses');
+});
+Route::get('/houses/filter/womens', 'HousesController@filterWomens', function () {
+    return view('houses');
+});
+Route::get('/houses/filter/ky', 'HousesController@filterKY', function () {
+    return view('houses');
+});
+Route::get('/houses/filter/oh', 'HousesController@filterOH', function () {
+    return view('houses');
+});
+Route::get('/houses/filter/busline', 'HousesController@filterBusline', function () {
+    return view('houses');
+});
+
 Route::get('/resources', function () {
     return view('resources');
 });

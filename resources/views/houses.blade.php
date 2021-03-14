@@ -21,14 +21,16 @@
     <div id="meetingsbar">
         <div class="row pt-2 pl-5 white-bg">
             <div class="col-sm-12">
-                <h1>Sober Living!</h1><br>
+                <h1>Sober Living! - {{ $house_filter }}</h1><br>
                 <div class="row">
                     <div class="col-sm-auto d-block">
                         <div id="elem" class="btn-group" role="group" aria-label="Basic example">
-                            <a id="elem" href="/meetings" class="btn btn-xs btn-info pull-left">All</a><br>
-                            <a href="/meetings/filter/daily" class="btn btn-xs btn-info pull-left">KY</a><br>
-                            <a href="/meetings/filter/Monday" class="btn btn-xs btn-info pull-left">OH</a><br>
-                            <a href="/meetings/filter/Tuesday" class="btn btn-xs btn-info pull-left">Busline</a><br>
+                            <a id="elem" href="/houses" class="btn btn-xs btn-info pull-left">All</a><br>
+                            <a href="/houses/filter/mens" class="btn btn-xs btn-info pull-left">Men's</a><br>
+                            <a href="/houses/filter/womens" class="btn btn-xs btn-info pull-left">Women's</a><br>
+                            <a href="/houses/filter/ky" class="btn btn-xs btn-info pull-left">KY</a><br>
+                            <a href="/houses/filter/oh" class="btn btn-xs btn-info pull-left">OH</a><br>
+                            <a href="/houses/filter/busline" class="btn btn-xs btn-info pull-left">Busline</a><br>
                         </div>
                     </div>
                     <!--<div class="col-sm-auto d-none d-md-block">
@@ -69,7 +71,11 @@
                             <li>{{ $house->city }}</li>
                             <li>{{ $house->state }}</li> 
                             <li>{{ $house->phone }}</li>
-                            <li>{{ $house->busline }}</li>
+                            @if($house->busline == 0)
+                                <li>No</li>
+                            @elseif($house->busline == 1)
+                                <li>Yes</li>
+                            @endif                            
                         </p>
                         <a href="#" class="show-button btn btn-primary">Directions</a>
                     </div>

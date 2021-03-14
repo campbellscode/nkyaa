@@ -12,4 +12,14 @@ class House extends Model
 
     protected $guarded = [];
 
+    //protected $casts = [ 'busline' => 'array' ];
+
+    public function setBuslineAttribute($value)
+    {
+        $this->attributes['busline'] = $value;
+    }
+    // public function getBuslineAttribute()
+    // {
+    //     return 1 ? 'YES' : 'NO';
+    // }
 }

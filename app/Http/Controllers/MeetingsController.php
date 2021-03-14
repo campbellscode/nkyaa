@@ -11,8 +11,6 @@ class MeetingsController extends Controller
     //
     public function index()
     {
-        //$strMeeting = "meetings";
-
         // Query and get all meetings from the Meeting.php model and set to meetings variable.
         $meetings = Meeting::all();
 

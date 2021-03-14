@@ -45,7 +45,15 @@ class HouseCrudController extends CrudController
         CRUD::column('city');
         CRUD::column('state');
         CRUD::column('phone');
-        CRUD::column('busline');
+        $this->crud->addColumn([   // select_from_array
+            'name' => 'busline',
+            'label' => "Busline",
+            'type' => 'boolean',
+            'options' => ['0' => 'No', '1' => 'Yes'],
+            'default' => '0',
+            // 'allows_multiple' => true, // OPTIONAL; needs you to cast this to array in your model;
+        ]);
+        //CRUD::column('busline');
         //CRUD::column('created_at');
         //CRUD::column('updated_at');
 
@@ -72,7 +80,15 @@ class HouseCrudController extends CrudController
         CRUD::field('city');
         CRUD::field('state');
         CRUD::field('phone');
-        CRUD::field('busline');
+        $this->crud->addField([   // select_from_array
+            'name' => 'busline',
+            'label' => "Busline",
+            'type' => 'boolean',
+            'options' => ['0' => 'No', '1' => 'Yes'],
+            'default' => '0',
+            // 'allows_multiple' => true, // OPTIONAL; needs you to cast this to array in your model;
+        ]);
+        //CRUD::field('busline');
         //CRUD::field('created_at');
         //CRUD::field('updated_at');
 

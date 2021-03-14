@@ -26,7 +26,11 @@ class HouseRequest extends FormRequest
     public function rules()
     {
         return [
-            // 'name' => 'required|min:5|max:255'
+            'name' => 'required|min:5|max:50',
+            'type' => 'required|min:1|max:10',
+            'city' => 'required|min:2|max:30',
+            'state' => 'required|min:2|max:30',
+            'phone' => 'required|min:10|max:13'
         ];
     }
 
