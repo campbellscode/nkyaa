@@ -41,9 +41,25 @@ class HouseCrudController extends CrudController
     {
         //CRUD::column('id');
         CRUD::column('name');
-        CRUD::column('type');
+        $this->crud->addColumn([   // select_from_array
+            'name' => 'type',
+            'label' => "Type",
+            'type' => 'select_from_array',
+            'options' => ['0' => 'Men\'s', '1' => 'Women\'s'],
+            'default' => '0',
+            // 'allows_multiple' => true, // OPTIONAL; needs you to cast this to array in your model;
+        ]);
+        //CRUD::column('type');
         CRUD::column('city');
-        CRUD::column('state');
+        $this->crud->addColumn([   // select_from_array
+            'name' => 'state',
+            'label' => "State",
+            'type' => 'select_from_array',
+            'options' => ['0' => 'KY', '1' => 'OH'],
+            'default' => '0',
+            // 'allows_multiple' => true, // OPTIONAL; needs you to cast this to array in your model;
+        ]);
+        //CRUD::column('state');
         CRUD::column('phone');
         $this->crud->addColumn([   // select_from_array
             'name' => 'busline',
@@ -76,9 +92,25 @@ class HouseCrudController extends CrudController
 
         //CRUD::field('id');
         CRUD::field('name');
+        $this->crud->addField([   // select_from_array
+            'name' => 'type',
+            'label' => "Type",
+            'type' => 'select_from_array',
+            'options' => ['0' => 'Men\'s', '1' => 'Women\'s'],
+            'default' => '0',
+            // 'allows_multiple' => true, // OPTIONAL; needs you to cast this to array in your model;
+        ]);        
         CRUD::field('type');
         CRUD::field('city');
-        CRUD::field('state');
+        $this->crud->addField([   // select_from_array
+            'name' => 'state',
+            'label' => "State",
+            'type' => 'select_from_array',
+            'options' => ['0' => 'KY', '1' => 'OH'],
+            'default' => '0',
+            // 'allows_multiple' => true, // OPTIONAL; needs you to cast this to array in your model;
+        ]);
+        //CRUD::field('state');
         CRUD::field('phone');
         $this->crud->addField([   // select_from_array
             'name' => 'busline',

@@ -12,8 +12,21 @@ class House extends Model
 
     protected $guarded = [];
 
-    //protected $casts = [ 'busline' => 'array' ];
+    //protected $casts = [ 'state' => 'json' ];
 
+    // Needed to show Men's and Women's, the value not the key, of the array.
+    public function setTypeAttribute($value)
+    {
+        $this->attributes['type'] = $value;
+    }
+
+    // Needed to show KY and OH, the value not the key, of the array.
+    public function setStateAttribute($value)
+    {
+        $this->attributes['state'] = $value;
+    }
+
+    // Needed to show Yes or No, the value not the key, of the array.
     public function setBuslineAttribute($value)
     {
         $this->attributes['busline'] = $value;

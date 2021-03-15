@@ -33,10 +33,10 @@ class HousesController extends Controller
         $house_filter = 'Mens';
         
         // Filter string.
-        $filter = 'me';
+        $filter = 0;
         
         // Filter all houses where the type field begins with 'me'.
-        $houses = House::where('type', 'LIKE', strtolower($filter.'%'))->get();
+        $houses = House::where('type', 'LIKE', ($filter.'%'))->get();
         
         // Update the view with filtered results.
         return view('houses', compact('houses', 'house_filter'));
@@ -50,10 +50,10 @@ class HousesController extends Controller
         $house_filter = 'Womens';
         
         // Filter string.
-        $filter = 'wo';
+        $filter = 1;
         
         // Filter all houses where the type field begins with 'wo'.
-        $houses = House::where('type', 'LIKE', strtolower($filter.'%'))->get();
+        $houses = House::where('type', 'LIKE', ($filter.'%'))->get();
         
         // Update the view with filtered results.
         return view('houses', compact('houses', 'house_filter'));
@@ -67,10 +67,10 @@ class HousesController extends Controller
         $house_filter = 'KY';
         
         // Filter string.
-        $filter = 'ky';
+        $filter = 0;
         
         // Filter all houses where the city field contains 'ky'.
-        $houses = House::where('state', 'LIKE', strtolower('%'.$filter.'%'))->get();
+        $houses = House::where('state', 'LIKE', ('%'.$filter.'%'))->get();
         
         // Update the view with filtered results.
         return view('houses', compact('houses', 'house_filter'));
@@ -84,10 +84,10 @@ class HousesController extends Controller
         $house_filter = 'OH';
         
         // Filter string.
-        $filter = 'oh';
+        $filter = 1;
         
         // Filter all houses where the city field contains 'oh'.
-        $houses = House::where('state', 'LIKE', strtolower('%'.$filter.'%'))->get();
+        $houses = House::where('state', 'LIKE', ('%'.$filter.'%'))->get();
         
         // Update the view with filtered results.
         return view('houses', compact('houses', 'house_filter'));

@@ -67,10 +67,16 @@
                     <div class="card-body card-shadow">
                         <h5 class="card-title">{{ $house->name }}</h5>
                         <p class="card-text">
-                            <li>{{ $house->type }}</li>
-                            <li>{{ $house->city }}</li>
-                            <li>{{ $house->state }}</li> 
-                            <li>{{ $house->phone }}</li>
+                        @if($house->type == 0)
+                                <li>Men's</li>
+                            @elseif($house->type == 1)
+                                <li>Women's</li>
+                            @endif                            <li>{{ $house->city }}</li>
+                            @if($house->state == 0)
+                                <li>KY</li>
+                            @elseif($house->state == 1)
+                                <li>OH</li>
+                            @endif                              <li>{{ $house->phone }}</li>
                             @if($house->busline == 0)
                                 <li>No</li>
                             @elseif($house->busline == 1)
