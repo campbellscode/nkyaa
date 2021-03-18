@@ -1,0 +1,66 @@
+#bar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 998;
+}
+
+body {
+    background-image: url("/images/holding-hands-1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+h1 {
+    color: black;
+}
+
+p {
+    color: white;
+}
+
+.opacity-85 {
+    opacity: 0.85;
+}
+
+.card-shadow {
+    box-shadow: 5px 5px 5px #6cb2eb;
+}
+
+.btn.btn-info {
+    color: #212529;
+    background-color: #6cb2eb;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn.btn-info:hover, .btn.btn-info:focus, .btn.btn-info:active  { 
+    background-color: black;
+    transform: translateY(4px);
+}
+
+/*.btn.btn-primary {
+    color: black;
+    background-color: #6cb2eb;
+    opacity: 1;
+}
+
+.btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
+    color: white;
+    background-color: black;
+    opacity: 1;
+} */ 
+

@@ -54,6 +54,31 @@ class DailyReflectionCrudController extends CrudController
          */
     }
 
+    protected function setupShowOperation()
+    {
+        //CRUD::setFromDb(); // columns
+        //CRUD::column('id');
+        CRUD::column('date');
+        CRUD::column('title');
+        $this->crud->addField([
+            'name' => 'reading',
+            'type' => 'textarea',
+            'label' => "Reading",
+            'attributes' => [
+                'rows' => 20              
+            ]
+        ]);
+        //CRUD::column('reading');
+        //CRUD::column('created_at');
+        //CRUD::column('updated_at');
+
+        /**
+         * Columns can be defined using the fluent syntax or array syntax:
+         * - CRUD::column('price')->type('number');
+         * - CRUD::addColumn(['name' => 'price', 'type' => 'number']); 
+         */
+    }
+
     /**
      * Define what happens when the Create operation is loaded.
      * 
@@ -68,7 +93,15 @@ class DailyReflectionCrudController extends CrudController
         //CRUD::field('id');
         CRUD::field('date');
         CRUD::field('title');
-        CRUD::field('reading');
+        $this->crud->addField([
+            'name' => 'reading',
+            'type' => 'textarea',
+            'label' => "Reading",
+            'attributes' => [
+                'rows' => 12                
+            ]
+        ]);
+        //CRUD::field('reading');
         //CRUD::field('created_at');
         //CRUD::field('updated_at');
 
