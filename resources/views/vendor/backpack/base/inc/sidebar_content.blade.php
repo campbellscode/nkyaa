@@ -4,3 +4,4 @@
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('event') }}'><i class='nav-icon la la-question'></i> Events</a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('meeting') }}'><i class='nav-icon la la-question'></i> Meetings</a></li>
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('day') }}'><i class='nav-icon la la-question'></i> Days</a></li>
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('dailyreflection') }}'><i class='nav-icon la la-question'></i> DailyReflections</a></li>
