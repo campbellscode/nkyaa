@@ -11,10 +11,13 @@
 
     <body>
         @section('message_title')
-            <h1>Daily Reflection!</h1>
-            <p>{{ DailyReflectionsController::getDate() }}<br>
-            {{ DailyReflectionsController::getTitle() }}<br>
-            {{ DailyReflectionsController::getReading() }}</p>
+            <!--<h1>Daily Reflection!</h1>-->
+            <div class="text-black">
+                <h4>{{ DailyReflectionsController::getDate() }}</h4>
+                <h2>{{ DailyReflectionsController::getTitle() }}</h2>
+                <h4>{{ DailyReflectionsController::getQuote() }}</h4>
+                <h5>{{ DailyReflectionsController::getReading() }}</h5>
+            </div>
         @stop
     </body>
 </html>

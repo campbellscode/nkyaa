@@ -63,7 +63,15 @@ class HouseCrudController extends CrudController
         CRUD::column('phone');
         $this->crud->addColumn([   // select_from_array
             'name' => 'busline',
-            'label' => "Busline",
+            'label' => "On Busline",
+            'type' => 'boolean',
+            'options' => ['0' => 'No', '1' => 'Yes'],
+            'default' => '0',
+            // 'allows_multiple' => true, // OPTIONAL; needs you to cast this to array in your model;
+        ]);
+        $this->crud->addColumn([   // select_from_array
+            'name' => 'mat',
+            'label' => "Accepts MAT",
             'type' => 'boolean',
             'options' => ['0' => 'No', '1' => 'Yes'],
             'default' => '0',
@@ -114,7 +122,15 @@ class HouseCrudController extends CrudController
         CRUD::field('phone');
         $this->crud->addField([   // select_from_array
             'name' => 'busline',
-            'label' => "Busline",
+            'label' => "On Busline",
+            'type' => 'boolean',
+            'options' => ['0' => 'No', '1' => 'Yes'],
+            'default' => '0',
+            // 'allows_multiple' => true, // OPTIONAL; needs you to cast this to array in your model;
+        ]);
+        $this->crud->addField([   // select_from_array
+            'name' => 'mat',
+            'label' => "Accepts MAT",
             'type' => 'boolean',
             'options' => ['0' => 'No', '1' => 'Yes'],
             'default' => '0',

@@ -31,6 +31,7 @@
                             <a href="/houses/filter/ky" class="btn btn-xs btn-info pull-left">KY</a><br>
                             <a href="/houses/filter/oh" class="btn btn-xs btn-info pull-left">OH</a><br>
                             <a href="/houses/filter/busline" class="btn btn-xs btn-info pull-left">Busline</a><br>
+                            <a href="/houses/filter/mat" class="btn btn-xs btn-info pull-left">MAT</a><br>
                         </div>
                     </div>
                     <!--<div class="col-sm-auto d-none d-md-block">
@@ -71,17 +72,24 @@
                                 <li>Men's</li>
                             @elseif($house->type == 1)
                                 <li>Women's</li>
-                            @endif                            <li>{{ $house->city }}</li>
+                            @endif                            
+                            <li>{{ $house->city }}</li>
                             @if($house->state == 0)
                                 <li>KY</li>
                             @elseif($house->state == 1)
                                 <li>OH</li>
-                            @endif                              <li>{{ $house->phone }}</li>
+                            @endif                              
+                            <li>{{ $house->phone }}</li>
                             @if($house->busline == 0)
-                                <li>No</li>
+                                <li>Busline: No</li>
                             @elseif($house->busline == 1)
-                                <li>Yes</li>
-                            @endif                            
+                                <li>Busline: Yes</li>
+                            @endif   
+                            @if($house->mat == 0)
+                                <li>Accepts MAT: No</li>
+                            @elseif($house->mat == 1)
+                                <li>Accepts MAT: Yes</li>
+                            @endif                          
                         </p>
                         <a href="#" class="show-button btn btn-primary">Directions</a>
                     </div>

@@ -7,8 +7,29 @@
     z-index: 998;
 }
 
+#leftHalf {
+    background: url("/images/bg-daily-reflections.jpg");
+    background-repeat: no-repeat;    
+    background-size: cover;
+    width: 50%;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+ }
+
+ /*#rightHalf {
+    width: 70%;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+ }*/
+
+ .text-black {
+     color: black ;
+ }
+
 body {
-    background-image: url("/images/holding-hands-1.jpg");
+    /*background-image: url("/images/holding-hands-1.jpg");*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

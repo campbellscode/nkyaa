@@ -98,13 +98,30 @@ class HousesController extends Controller
         $houses = House::all();  
         
         // Busline filter for title update.
-        $house_filter = 'Busline';
+        $house_filter = 'On Busline';
         
         // Filter string.
         $filter = 1;
         
         // Filter all houses where the busline field is true.
         $houses = House::where('busline', 'LIKE', strtolower($filter.'%'))->get();
+        
+        // Update the view with filtered results.
+        return view('houses', compact('houses', 'house_filter'));
+    }
+
+    public function filterMAT() {
+        // Get all houses.
+        $houses = House::all();  
+        
+        // Busline filter for title update.
+        $house_filter = 'Accepts MAT';
+        
+        // Filter string.
+        $filter = 1;
+        
+        // Filter all houses where the busline field is true.
+        $houses = House::where('mat', 'LIKE', strtolower($filter.'%'))->get();
         
         // Update the view with filtered results.
         return view('houses', compact('houses', 'house_filter'));

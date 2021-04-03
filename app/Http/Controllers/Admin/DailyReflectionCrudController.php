@@ -43,6 +43,7 @@ class DailyReflectionCrudController extends CrudController
         //CRUD::column('id');
         CRUD::column('date');
         CRUD::column('title');
+        CRUD::column('quote');
         CRUD::column('reading');
         //CRUD::column('created_at');
         //CRUD::column('updated_at');
@@ -60,6 +61,7 @@ class DailyReflectionCrudController extends CrudController
         //CRUD::column('id');
         CRUD::column('date');
         CRUD::column('title');
+        CRUD::column('quote');
         $this->crud->addField([
             'name' => 'reading',
             'type' => 'textarea',
@@ -93,6 +95,7 @@ class DailyReflectionCrudController extends CrudController
         //CRUD::field('id');
         CRUD::field('date');
         CRUD::field('title');
+        CRUD::field('quote');
         $this->crud->addField([
             'name' => 'reading',
             'type' => 'textarea',

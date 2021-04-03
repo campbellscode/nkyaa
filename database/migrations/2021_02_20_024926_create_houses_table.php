@@ -21,6 +21,7 @@ class CreateHousesTable extends Migration
             $table->json('state');
             $table->bigInteger('phone');
             $table->boolean('busline');
+            $table->boolean('mat');
             $table->timestamps();
         });
     }

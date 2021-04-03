@@ -27,16 +27,26 @@ class DailyReflectionsController extends Controller
         $strip_array = ['"', "[", "]"];
 
         $new_title = str_replace($strip_array, "", $title);
-        return $new_title;
+        return stripslashes($new_title);
+    }
+
+    public static function getQuote() 
+    {
+        $todays_date = date("Y/m/d");
+        $quote = DailyReflection::where('date', '=', date("Y/m/d"))->pluck('quote');
+        $strip_array = ['"', "[", "]", "\\r\\n", "\\n", "\\r", "\\u", "201d2014", "2019", "201c", "2014"];
+        
+        $new_quote = str_replace($strip_array, "", $quote);
+        return stripslashes($new_quote);
     }
 
     public static function getReading() 
     {
         $todays_date = date("Y/m/d");
         $reading = DailyReflection::where('date', '=', date("Y/m/d"))->pluck('reading');
-        $strip_array = ['"', "[", "]", "\\r\\n", "\\n", "\\r", "\\u", "201d2014", "2019", "201c"];
+        $strip_array = ['"', "[", "]", "\\r\\n", "\\n", "\\r", "\\u", "201d2014", "2019", "201c", "2014"];
 
         $new_reading = str_replace($strip_array, "", $reading);
-        return $new_reading;
+        return stripslashes($new_reading);
     }
 }

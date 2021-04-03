@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('landing');
+});
+
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
@@ -72,6 +76,10 @@ Route::get('/houses/filter/oh', 'HousesController@filterOH', function () {
 Route::get('/houses/filter/busline', 'HousesController@filterBusline', function () {
     return view('houses');
 });
+Route::get('/houses/filter/mat', 'HousesController@filterMAT', function () {
+    return view('houses');
+});
+
 
 Route::get('/resources', function () {
     return view('resources');
