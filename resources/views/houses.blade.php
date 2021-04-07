@@ -19,9 +19,10 @@
 
     @section('content')
     <div id="meetingsbar">
-        <div class="row pt-2 pl-5 white-bg">
+        <div class="row pt-2 pl-5 mainbar">
             <div class="col-sm-12">
-                <h1>Sober Living! - {{ $house_filter }}</h1><br>
+                <h1>Sober Living! - {{ $house_filter }}</h1>
+                <div class="thin-hr mb-4"></div>
                 <div class="row">
                     <div class="col-sm-auto d-block">
                         <div id="elem" class="btn-group" role="group" aria-label="Basic example">

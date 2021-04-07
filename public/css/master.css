@@ -32,6 +32,11 @@ nav .navbar-nav li a{
 }
 /* ---------------------------------------- */
 
+.mainbar {
+  background-image: linear-gradient(to bottom right, #6b6b6a, white, #6cb2eb);
+  /*background: #b5b4b1;*/
+}
+
 .sticky {
   position: fixed;
   z-index: 999;

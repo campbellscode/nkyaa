@@ -24,11 +24,10 @@
         @stop
 
         @section('content')
-        <div id="welcomebar">
-        <div class="row pt-2 pl-5 white-bg">
+        <div class="row pt-2 pl-5 mainbar">
             <div class="col-lg-12">
                 <h1>NKY AA Central Office</h1>
-                <div class="thin-hr mb-4"></div>
+                <div class="thin-hr mb-4"></div><br>
             </div>
         </div>
         <div class="row pt-2 pl-5 pr-5 white-bg">
