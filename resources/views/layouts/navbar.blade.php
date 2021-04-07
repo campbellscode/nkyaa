@@ -13,6 +13,7 @@
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{ asset('js/navbar.js') }}" defer></script>
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -30,28 +31,28 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="/welcome">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link cool-link" href="/welcome">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/meetings/filter/<?php echo $weekday; ?>">Meetings</a>
+                            <a class="nav-link cool-link" href="/meetings/filter/<?php echo $weekday; ?>">Meetings</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/events">Events</a>
+                            <a class="nav-link cool-link" href="/events">Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/houses">Sober Living</a>
+                            <a class="nav-link cool-link" href="/houses">Sober Living</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/resources">Resources</a>
+                            <a class="nav-link cool-link" href="/resources">Resources</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/literature">Literature</a>
+                            <a class="nav-link cool-link" href="/literature">Literature</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/requests">Requests</a>
+                            <a class="nav-link cool-link" href="/requests">Requests</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact">Contact</a>
+                            <a class="nav-link cool-link" href="/contact">Contact</a>
                         </li>
                         <!--<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

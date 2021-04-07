@@ -1,11 +1,36 @@
 #navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: black !important;
   position: sticky;
   top: 0;
   width: 100%;
   z-index: 999;
 }
+
+nav .navbar-nav li a{
+  color: white !important;  
+}
+
+/* Underline navbar link on hover animation */
+.cool-link {
+  display: inline-block;
+  color: #6cb2eb;
+  text-decoration: none;
+}
+
+.cool-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #6cb2eb;
+  transition: width .3s;
+}
+
+.cool-link:hover::after {
+  width: 75%;
+}
+/* ---------------------------------------- */
 
 .sticky {
   position: fixed;
@@ -131,4 +156,16 @@
 .opacity-0h5:hover {
   opacity:1!important;
 }
+
+.thin-hr {
+  margin-top:0;
+  margin-bottom:0;
+  margin-right: 0;
+  margin-left: 0;
+  border:0;
+  width: 15%;
+  height:1px;    
+  background-color:#6cb2eb;    
+}
+
 

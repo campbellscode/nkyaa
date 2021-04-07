@@ -27,20 +27,22 @@
         <div id="welcomebar">
         <div class="row pt-2 pl-5 white-bg">
             <div class="col-lg-12">
-                <h1>Welcome!</h1><br>
-            </div>
-            <div class="row pt-2 pl-5 pr-5 white-bg">
-                <div class="col-xl-5">
-                    <div class="bg-white opacity-3 rounded m-4 p-3">
-                        @include('subviews.dailyreflections')
-                        @yield('message_title')
-                    </div>
-                </div>
-                <div class="col-xl-7 pt-2">
-                    <h1>NKY AA Central Office</h1>
-                </div>
+                <h1>NKY AA Central Office</h1>
+                <div class="thin-hr mb-4"></div>
             </div>
         </div>
+        <div class="row pt-2 pl-5 pr-5 white-bg">
+            <div class="col-xl-5">
+            <h1>Daily Reflection</h1>
+                <div class="bg-white opacity-3 rounded m-4 p-3">                        
+                    @include('subviews.dailyreflections')
+                    @yield('message_title')
+                </div>
+            </div>
+            <div class="col-xl-7 pt-2">
+                <h1>NKY AA Central Office</h1>
+            </div>
+        </div>        
         @stop
     </body>
 </html>

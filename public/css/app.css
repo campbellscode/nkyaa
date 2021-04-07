@@ -3973,6 +3973,7 @@ input[type=button].btn-block {
   justify-content: space-between;
 }
 .navbar-brand {
+  color: #6cb2eb !important;
   display: inline-block;
   padding-top: 0.32rem;
   padding-bottom: 0.32rem;

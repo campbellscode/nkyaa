@@ -17,7 +17,7 @@ class CreateDailyReflectionsTable extends Migration
             $table->bigIncrements('id');
             $table->date('date')->default(date("Y-m-d H:i:s"));
             $table->string('title');
-            $table->string('quote');
+            $table->text('quote');
             $table->text('reading');
             $table->timestamps();
         });
