@@ -33,7 +33,7 @@ nav .navbar-nav li a{
 /* ---------------------------------------- */
 
 .mainbar {
-  background-image: linear-gradient(to bottom right, #6b6b6a, white, #6cb2eb);
+  background-image: linear-gradient(to bottom right, transparent, #6b6b6a 30%, transparent, yellow 50%, transparent, #6cb2eb 70%);
   /*background: #b5b4b1;*/
 }
 
@@ -175,10 +175,49 @@ nav .navbar-nav li a{
 
 /* For mobile devices */
 @media only screen and (max-width: 600px) {
+  /* Shorten the length of the searchbox */
   #navbarSearch {
     width: 38%;
     margin-right: 8px;
   }
+}
 
+/* For sm, xs devices */
+@media only screen and (min-width: 0px)and (max-width: 660px) {
+  #btn-group-sm-xs {
+    display: block;
+  }
+  #btn-group-lg-md {
+    display: none;
+  }
+  #btn-group-xl {
+    display: none;
+  }
+}
+
+/* For lg, md devices */
+@media only screen and (min-width: 661px) and (max-width: 1330px) {
+  #btn-group-sm-xs {
+    display: none;
+  }
+  #btn-group-lg-md {
+    display: block;
+  }
+  #btn-group-xl {
+    display: none;
+  }
+}
+
+/* For xl devices */
+@media only screen and (min-width: 1331px) {
+  #btn-group-sm-xs {
+    display: none;
+  }
+  #btn-group-lg-md {
+    display: none;
+  }
+  #btn-group-xl {
+    display: block;
+  }
 }
 

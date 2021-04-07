@@ -76,9 +76,6 @@
                 </div>
             </nav>
         @show
-
-        <!-- <div class="container"> -->
-            @yield('content')
-        <!-- </div> -->
+        @yield('content')
     </body>
 </html>

@@ -5,6 +5,7 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/master.css') }}" rel="stylesheet">
         <link href="{{ URL::asset('css/meetings.css') }}" rel="stylesheet">
 
@@ -21,11 +22,11 @@
             <div class="row pt-2 pl-5 mainbar">
                 <div class="col-sm-12">
                     <h1>Meetings! - {{ $meeting_day }}</h1>
-                    <div class="thin-hr mb-4"></div>
+                    <div class="thin-hr mb-4"></div><br>
                     <div class="row">
                         <div class="col-sm-auto d-block">
-                            <div id="elem" class="btn-group" role="group" aria-label="Basic example">
-                                <a id="elem" href="/meetings" class="btn btn-xs btn-info pull-left">All</a><br>
+                            <div id="btn-group-meetings" class="btn-group" role="group" aria-label="Basic example">
+                                <a href="/meetings" class="btn btn-xs btn-info pull-left">All</a><br>
                                 <a href="/meetings/filter/daily" class="btn btn-xs btn-info pull-left">Daily</a><br>
                                 <a href="/meetings/filter/Monday" class="btn btn-xs btn-info pull-left">Mo</a><br>
                                 <a href="/meetings/filter/Tuesday" class="btn btn-xs btn-info pull-left">Tu</a><br>

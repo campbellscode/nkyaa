@@ -1,0 +1,45 @@
+#welcomebar {
+    overflow: hidden;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 998;
+}
+
+.btn.btn-starter {
+    color: #212529;
+    background-color: #6cb2eb;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 0;
+    width: 10rem !important;
+}
+
+.btn.btn-starter:hover, .btn.btn-starter:focus, .btn.btn-starter:active  { 
+    color: white;
+    background-color: black;
+    transform: translateY(4px);
+}
+
+.btn.btn-info {
+    color: #212529;
+    background-color: #6cb2eb;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    width: 10rem !important;
+}
+
+.btn.btn-info:hover, .btn.btn-info:focus, .btn.btn-info:active  { 
+    color: white;
+    background-color: black;
+    transform: translateY(4px);
+}
