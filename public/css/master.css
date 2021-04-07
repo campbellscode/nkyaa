@@ -173,4 +173,12 @@ nav .navbar-nav li a{
   background-color:#6cb2eb;    
 }
 
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+  #navbarSearch {
+    width: 38%;
+    margin-right: 8px;
+  }
+
+}
 
