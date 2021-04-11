@@ -197,6 +197,7 @@ nav .navbar-nav li a{
 
 /* For lg, md devices */
 @media only screen and (min-width: 661px) and (max-width: 1330px) {
+  /* Welcome screen buttons */
   #btn-group-sm-xs {
     display: none;
   }

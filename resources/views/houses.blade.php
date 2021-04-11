@@ -5,11 +5,11 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+        @section('title', 'Sober Living')
+
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/master.css') }}" rel="stylesheet">
         <link href="{{ URL::asset('css/meetings.css') }}" rel="stylesheet">
-
-        @section('title', 'Sober Living')
     </head>
         
         @section('navbar')

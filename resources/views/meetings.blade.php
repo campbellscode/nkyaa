@@ -5,18 +5,18 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+        @section('title', 'Meetings')
+    
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/master.css') }}" rel="stylesheet">
         <link href="{{ URL::asset('css/meetings.css') }}" rel="stylesheet">
-
-        @section('title', 'Meetings')
     </head>
-        
-    @section('navbar')
-        @parent
-    @stop
 
     <body>
+        @section('navbar')
+            @parent
+        @stop
+
         @section('content')
         <div id="meetingsbar">
             <div class="row pt-2 pl-5 mainbar">

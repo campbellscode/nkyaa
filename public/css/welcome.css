@@ -7,6 +7,21 @@
     z-index: 998;
 }
 
+#leftHalf {    
+    position: absolute;
+    left: 0px;
+ }
+
+ #rightHalf {    
+    background: url("/images/bw-central-office-window.jpg");
+    background-repeat: no-repeat;  
+    background-size: contain;  
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+ }
+
 .btn.btn-starter {
     color: #212529;
     background-color: #6cb2eb;
@@ -43,3 +58,25 @@
     background-color: black;
     transform: translateY(4px);
 }
+
+/* For sm, xs devices */
+@media only screen and (min-width: 0px)and (max-width: 660px) {
+    /* Welcome screen left and right divs */
+    #content-md-sm-xs {
+        display: block;
+    }
+    #content-xl-lg {
+        display: none;
+    }
+}
+
+/* For lg, md devices */
+@media only screen and (min-width: 661px) and (max-width: 1330px) {
+    /* Welcome screen left and right divs */
+    #content-md-sm-xs {
+        display: none;
+    }
+    #content-xl-lg {
+        display: block;
+    }
+  }

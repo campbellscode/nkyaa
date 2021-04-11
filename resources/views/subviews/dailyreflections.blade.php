@@ -11,7 +11,6 @@
 
     <body>
         @section('message_title')
-            <!--<h1>Daily Reflection!</h1>-->
             <div class="text-black">
                 <h4>{{ DailyReflectionsController::getDate() }}</h4>
                 <h2>{{ DailyReflectionsController::getTitle() }}</h2>

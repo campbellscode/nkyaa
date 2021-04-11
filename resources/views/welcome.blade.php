@@ -5,8 +5,7 @@
     <head>
         <meta charset="utf-8">
 
-        <!--<title>{{ config('app.name', 'Laravel') }}</title>-->
-        <title>NKY AA - @yield('title')</title>
+        @section('title', 'Welcome')
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
@@ -18,8 +17,6 @@
     </head>
     
     <body>
-        @section('title', 'Home')
-
         @section('navbar')
             @parent
         @stop
@@ -113,5 +110,3 @@
         @stop
     </body>
 </html>
-
-

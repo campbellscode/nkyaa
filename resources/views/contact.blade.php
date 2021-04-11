@@ -1,11 +1,35 @@
 @extends('layouts.navbar')
 
-@section('title', 'Contact')
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
 
-@section('navbar')
-    @parent
-@stop
+        @section('title', 'Contact')
 
-@section('content')
-    <h1>Contact Page!</h1>
-@stop
+        <!-- Scripts 
+        <script src="{{ asset('js/app.js') }}" defer></script> -->
+
+        <!-- Styles -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/master.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
+    </head>
+    
+    <body>
+        @section('navbar')
+            @parent
+        @stop
+
+        @section('content')
+            <div id="contactbar">
+                <div class="row pt-2 pl-5 mainbar">
+                    <div class="col-lg-12">
+                        <h1>Contact</h1>
+                        <div class="thin-hr mb-4"></div><br>
+                    </div>
+                </div>
+            </div>
+        @stop
+    </body>
+</html> 
