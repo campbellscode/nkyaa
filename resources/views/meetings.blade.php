@@ -8,8 +8,8 @@
         @section('title', 'Meetings')
     
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/master.css') }}" rel="stylesheet">
-        <link href="{{ URL::asset('css/meetings.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/master.css?v=').time() }}" rel="stylesheet">
+        <link href="{{ asset('css/meetings.css') }}" rel="stylesheet">
     </head>
 
     <body>
@@ -66,7 +66,7 @@
 
         <div class="row ml-5">
             @foreach ($meetings as $meeting)
-                <div class="card opacity-85 mr-3 mb-3" style="width: 18rem;">
+                <div class="card opacity-85 mr-3 mb-3">
                     <!-- <img class="card-img-top" src="{{url('/images/holding-hands.jpg')}}" alt="Card image cap"> -->
                     <div class="card-body card-shadow">
                         <h5 class="card-title">{{ $meeting->name }}</h5>

@@ -64,7 +64,7 @@
                         </div>
                     </div>
 
-                    <!-- Visible only on sm and ms screens -->
+                    <!-- Visible only on sm and xs screens -->
                     <div id="btn-group-sm-xs" class="row">
                         <div class="col-2">
                             <div class="btn-group" role="group" aria-label="Basic example">
