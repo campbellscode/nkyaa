@@ -27,7 +27,6 @@
                         <div class="col-sm-auto d-block">
                             <div id="btn-group-meetings" class="btn-group" role="group" aria-label="Basic example">
                                 <a href="/meetings" class="btn btn-xs btn-info pull-left">All</a><br>
-                                <a href="/meetings/filter/daily" class="btn btn-xs btn-info pull-left">Daily</a><br>
                                 <a href="/meetings/filter/Monday" class="btn btn-xs btn-info pull-left">Mo</a><br>
                                 <a href="/meetings/filter/Tuesday" class="btn btn-xs btn-info pull-left">Tu</a><br>
                                 <a href="/meetings/filter/Wednesday" class="btn btn-xs btn-info pull-left">We</a><br>
@@ -35,6 +34,7 @@
                                 <a href="/meetings/filter/Friday" class="btn btn-xs btn-info pull-left">Fr</a><br>
                                 <a href="/meetings/filter/Saturday" class="btn btn-xs btn-info pull-left">Sa</a><br>
                                 <a href="/meetings/filter/Sunday" class="btn btn-xs btn-info pull-left">Su</a><br>
+                                <a href="/meetings/filter/zoom" class="btn btn-xs btn-info pull-left">Zoom</a><br>
                             </div>
                         </div>
                         <!--<div class="col-sm-auto d-none d-md-block">

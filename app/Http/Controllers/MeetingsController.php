@@ -21,23 +21,6 @@ class MeetingsController extends Controller
         return view('meetings', compact('meetings', 'meeting_day'));
     }
 
-    public function filterDaily() {
-        // Get all meetings.
-        $meetings = Meeting::all();  
-        
-        // Meeting day of the week.
-        $meeting_day = 'Daily';
-        
-        // Filter string.
-        $day = 'dai';
-        
-        // Filter all meetings where the day field contains 'mo'.
-        $meetings = Meeting::where('days', 'LIKE', strtolower('%'.$day.'%'))->get();
-        
-        // Update the view with filtered results.
-        return view('meetings', compact('meetings', 'meeting_day'));
-    }
-
     public function filterMon() {
         // Get all meetings.
         $meetings = Meeting::all();  
@@ -157,4 +140,21 @@ class MeetingsController extends Controller
         // Update the view with filtered results.
         return view('meetings', compact('meetings', 'meeting_day'));
     }    
+
+    public function filterZoom() {
+        // Get all meetings.
+        $meetings = Meeting::all();  
+        
+        // Meeting day of the week.
+        $meeting_day = 'Zoom';
+        
+        // Filter string.
+        $day = 'zoo';
+        
+        // Filter all meetings where the day field contains 'mo'.
+        $meetings = Meeting::where('days', 'LIKE', strtolower('%'.$day.'%'))->get();
+        
+        // Update the view with filtered results.
+        return view('meetings', compact('meetings', 'meeting_day'));
+    }
 }

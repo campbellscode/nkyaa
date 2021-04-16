@@ -26,9 +26,6 @@ Route::get('/meetings', 'MeetingsController@index', function () {
 });
 
 // Meeting day filters.
-Route::get('/meetings/filter/daily', 'MeetingsController@filterDaily', function () {
-    return view('meetings');
-});
 Route::get('/meetings/filter/Monday', 'MeetingsController@filterMon', function () {
     return view('meetings');
 });
@@ -50,7 +47,9 @@ Route::get('/meetings/filter/Saturday', 'MeetingsController@filterSat', function
 Route::get('/meetings/filter/Sunday', 'MeetingsController@filterSun', function () {
     return view('meetings');
 });
-
+Route::get('/meetings/filter/zoom', 'MeetingsController@filterZoom', function () {
+    return view('meetings');
+});
 
 Route::get('/events', function () {
     return view('events');
