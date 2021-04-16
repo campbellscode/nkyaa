@@ -43,7 +43,7 @@ class MeetingsController extends Controller
         $meetings = Meeting::all();  
 
         // Meeting day of the week.
-        $meeting_day = 'Monday'; 
+        $meeting_day = 'Mon'; 
 
         // Filter string.
         $day = 'mo';        
@@ -61,7 +61,7 @@ class MeetingsController extends Controller
         $meetings = Meeting::all();   
 
         // Meeting day of the week.
-        $meeting_day = 'Tuesday';
+        $meeting_day = 'Tue';
 
         // Filter string.
         $day = 'tu';
@@ -78,7 +78,7 @@ class MeetingsController extends Controller
         $meetings = Meeting::all();        
         
         // Meeting day of the week.
-        $meeting_day = 'Wednesday';
+        $meeting_day = 'Wed';
 
         // Filter string.
         $day = 'we';
@@ -95,7 +95,7 @@ class MeetingsController extends Controller
         $meetings = Meeting::all();  
         
         // Meeting day of the week.
-        $meeting_day = 'Thursday';
+        $meeting_day = 'Thu';
         
         // Filter string.
         $day = 'th';
@@ -112,7 +112,7 @@ class MeetingsController extends Controller
         $meetings = Meeting::all();     
         
         // Meeting day of the week.
-        $meeting_day = 'Friday';        
+        $meeting_day = 'Fri';        
         
         // Filter string.
         $day = 'fr';
@@ -129,7 +129,7 @@ class MeetingsController extends Controller
         $meetings = Meeting::all();        
         
         // Meeting day of the week.
-        $meeting_day = 'Saturday';
+        $meeting_day = 'Sat';
 
         // Filter string.
         $day = 'sa';
@@ -146,7 +146,7 @@ class MeetingsController extends Controller
         $meetings = Meeting::all();   
         
         // Meeting day of the week.
-        $meeting_day = 'Sunday';
+        $meeting_day = 'Sun';
         
         // Filter string.
         $day = 'su';

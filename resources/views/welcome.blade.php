@@ -16,10 +16,12 @@
         <link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
     </head>
     
+    @section('navbar')
+        @parent
+    @stop
+
     <body>
-        @section('navbar')
-            @parent
-        @stop
+
 
         @section('content')
         <div id="welcomebar">

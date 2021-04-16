@@ -4,7 +4,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <link href="{{ asset('css/master.css') }}" rel="stylesheet">
-        <link href="{{ URL::asset('css/dailyreflections.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/dailyreflections.css') }}" rel="stylesheet">
 
         @section('title', 'Home')
     </head>       

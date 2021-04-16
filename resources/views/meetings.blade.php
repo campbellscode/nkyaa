@@ -9,7 +9,7 @@
     
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/master.css?v=').time() }}" rel="stylesheet">
-        <link href="{{ asset('css/meetings.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/meetings.css') }}" rel="stylesheet"> 
     </head>
 
     <body>

@@ -3,3 +3,4 @@ $(document).click(function(event) {
     $(".navbar-collapse.show").length && 
     $(".navbar-collapse.show").collapse("hide")
   });
+
