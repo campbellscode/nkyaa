@@ -167,7 +167,7 @@ nav .navbar-nav li a{
   -webkit-transition: opacity .25s ease-in-out!important;
 }
 .opacity-0h5:hover {
-  opacity:1!important;
+  opacity:1 !important;
 }
 
 .thin-hr {
@@ -254,14 +254,14 @@ nav .navbar-nav li a{
     font-size: 95px;
   }
 
-  /* Meetingsbar buttons */
-  #btn-group-meetings a {
+  /* Filtering button bar */
+  #btn-group-bar a {
     font-size: 35px;
   }  
   .btn {
     width: 95px;
     height: 75px;
-  } 
+  }
 
   /* Cards */
   .card {
@@ -280,16 +280,7 @@ nav .navbar-nav li a{
   }
   .card-body a {
     font-size: 50px;
-  }
-
-    /* Housessbar buttons */
-    #btn-group-houses a {
-      font-size: 35px;
-    }  
-    .btn {
-      width: 95px;
-      height: 75px;
-    } 
+  } 
 }
 
 /* For sm, md/landscape oriented devices */
@@ -351,17 +342,8 @@ nav .navbar-nav li a{
     font-size: 45px;
   }
 
-  /* Meetingsbar buttons */
-  #btn-group-meetings a {
-    font-size: 15px;
-  }  
-  .btn {
-    width: 80px;
-    height: 40px;
-  } 
-
-  /* Housesbar buttons */
-  #btn-group-houses a {
+  /* Filtering button bar */
+  #btn-group-bar a {
     font-size: 15px;
   }  
   .btn {
@@ -447,18 +429,9 @@ nav .navbar-nav li a{
     font-size: 45px;
   }
 
-  /* Meetingsbar buttons */
-  #btn-group-meetings a {
-    font-size: 20px;
-  }  
-  .btn {
-    width: 85px;
-    height: 45px;
-  } 
-
-  /* Housesbar buttons */
-  #btn-group-houses a {
-    font-size: 20px;
+  /* Filtering button bar */
+  #btn-group-bar a {
+    font-size: 19px;
   }  
   .btn {
     width: 105px;

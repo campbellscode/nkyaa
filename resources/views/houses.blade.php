@@ -25,8 +25,8 @@
                     <div class="thin-hr mb-4"></div><br>
                     <div class="row">
                         <div class="col-sm-auto d-block">
-                            <div id="btn-group-houses" class="btn-group" role="group" aria-label="Basic example">
-                                <a href="/houses" class="btn btn-xs btn-info pull-left">All</a><br>
+                            <div id="btn-group-bar" class="btn-group" role="group" aria-label="Basic example">
+                                <a href="/houses" class="btn btn-xs btn-starter pull-left">All</a><br>
                                 <a href="/houses/filter/mens" class="btn btn-xs btn-info pull-left">Men's</a><br>
                                 <a href="/houses/filter/womens" class="btn btn-xs btn-info pull-left">Women's</a><br>
                                 <a href="/houses/filter/ky" class="btn btn-xs btn-info pull-left">KY</a><br>
