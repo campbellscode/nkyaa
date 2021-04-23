@@ -4,3 +4,6 @@ $(document).click(function(event) {
     $(".navbar-collapse.show").collapse("hide")
   });
 
+$(document).ready(function() {
+    $(".dropdown-toggle").dropdown();
+});

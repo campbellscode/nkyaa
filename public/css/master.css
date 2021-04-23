@@ -8,7 +8,7 @@ body {
 }
 
 #navbar {
-  overflow: hidden;
+  /*overflow: hidden;*/
   background-color: black !important;
   position: sticky;
   top: 0;
@@ -19,6 +19,12 @@ body {
 nav .navbar-nav li a{
   color: white !important;  
 }
+
+/* Navbar dropdown menu */
+.dropdown-menu{background:rgba(0,0,0,0.5); color:black; }
+.dropdown .dropdown-menu a:hover{color: #6cb2eb !important; text-decoration: none !important;}
+.dropdown .dropdown-menu .dropdown-item:active, .dropdown .dropdown-menu .dropdown-item:hover{background-color: black !important;}
+
 
 /* Underline navbar link on hover animation */
 .cool-link {
@@ -175,6 +181,11 @@ nav .navbar-nav li a{
   background-color:#6cb2eb;    
 }
 
+.vl {
+  border-left: 1px solid #6cb2eb;
+  height: 40px;
+}
+
 /* For xs devices */
 @media only screen and (max-width: 980px) {
   /* Welcome screen buttons */
@@ -270,6 +281,15 @@ nav .navbar-nav li a{
   .card-body a {
     font-size: 50px;
   }
+
+    /* Housessbar buttons */
+    #btn-group-houses a {
+      font-size: 35px;
+    }  
+    .btn {
+      width: 95px;
+      height: 75px;
+    } 
 }
 
 /* For sm, md/landscape oriented devices */
@@ -333,6 +353,15 @@ nav .navbar-nav li a{
 
   /* Meetingsbar buttons */
   #btn-group-meetings a {
+    font-size: 15px;
+  }  
+  .btn {
+    width: 80px;
+    height: 40px;
+  } 
+
+  /* Housesbar buttons */
+  #btn-group-houses a {
     font-size: 15px;
   }  
   .btn {
@@ -427,6 +456,15 @@ nav .navbar-nav li a{
     height: 45px;
   } 
 
+  /* Housesbar buttons */
+  #btn-group-houses a {
+    font-size: 20px;
+  }  
+  .btn {
+    width: 105px;
+    height: 45px;
+  } 
+
   /* Cards */
   .card {
     width: 18rem;  
@@ -445,6 +483,5 @@ nav .navbar-nav li a{
   .card-body a {
     font-size: 20px;
   }
-
 }
 

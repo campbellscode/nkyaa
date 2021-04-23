@@ -55,35 +55,6 @@ Route::get('/events', function () {
     return view('events');
 });
 
-Route::get('/houses', 'HousesController@index', function () {
-    return view('houses');
-});
-
-// Sober Living house filters.
-Route::get('/houses/filter/mens', 'HousesController@filterMens', function () {
-    return view('houses');
-});
-Route::get('/houses/filter/womens', 'HousesController@filterWomens', function () {
-    return view('houses');
-});
-Route::get('/houses/filter/ky', 'HousesController@filterKY', function () {
-    return view('houses');
-});
-Route::get('/houses/filter/oh', 'HousesController@filterOH', function () {
-    return view('houses');
-});
-Route::get('/houses/filter/busline', 'HousesController@filterBusline', function () {
-    return view('houses');
-});
-Route::get('/houses/filter/mat', 'HousesController@filterMAT', function () {
-    return view('houses');
-});
-
-
-Route::get('/resources', function () {
-    return view('resources');
-});
-
 Route::get('/literature', function () {
     return view('literature');
 });
@@ -94,4 +65,34 @@ Route::get('/requests', function () {
 
 Route::get('/contact', function () {
     return view('contact');
+});
+
+/* Dropdown menu routes */
+Route::get('/houses', 'HousesController@index', function () {
+    return view('houses');
+});
+    // Sober Living house filters.
+    Route::get('/houses/filter/mens', 'HousesController@filterMens', function () {
+        return view('houses');
+    });
+    Route::get('/houses/filter/womens', 'HousesController@filterWomens', function () {
+        return view('houses');
+    });
+    Route::get('/houses/filter/ky', 'HousesController@filterKY', function () {
+        return view('houses');
+    });
+    Route::get('/houses/filter/oh', 'HousesController@filterOH', function () {
+        return view('houses');
+    });
+    Route::get('/houses/filter/busline', 'HousesController@filterBusline', function () {
+        return view('houses');
+    });
+    Route::get('/houses/filter/mat', 'HousesController@filterMAT', function () {
+        return view('houses');
+    });
+Route::get('/clubhouses', function () {
+    return view('clubhouses');
+});
+Route::get('/resources', function () {
+    return view('resources');
 });

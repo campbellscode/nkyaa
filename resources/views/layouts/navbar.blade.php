@@ -38,35 +38,31 @@
                             <a class="nav-link cool-link" href="/meetings/filter/<?php echo $weekday; ?>">Meetings</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link cool-link" href="/events">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link cool-link" href="/houses">Sober Living</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link cool-link" href="/resources">Resources</a>
+                            <a style="color:grey !important;" class="nav-link cool-link disabled" href="/events">Events</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link cool-link" href="/literature">Literature</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link cool-link" href="/requests">Requests</a>
+                            <a style="color:grey !important;" class="nav-link cool-link disabled" href="/requests">Requests</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link cool-link" href="/contact">Contact</a>
+                            <a style="color:grey !important;" class="nav-link cool-link disabled" href="/contact">Contact</a>
                         </li>
-
-                        <!--<li class="nav-item dropdown">
+                        <div class="vl"></div>
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                            Non-AA Resources
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="/houses">Sober Living</a>
+                            <a class="dropdown-item" href="/clubhouses">Clubhouses</a>
+                            <a class="dropdown-item" href="/resources">Community Resources</a>
+                            <!--<div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>-->
                             </div>
                         </li>
+                        <!--
                         <li class="nav-item">
                             <a class="nav-link disabled" href="#">Disabled</a>
                         </li>-->

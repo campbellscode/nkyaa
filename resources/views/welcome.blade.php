@@ -21,8 +21,6 @@
     @stop
 
     <body>
-
-
         @section('content')
         <div id="welcomebar">
             <div class="row pt-2 pl-5 mainbar">

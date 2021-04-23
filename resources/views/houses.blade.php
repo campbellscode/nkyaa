@@ -9,23 +9,23 @@
 
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/master.css') }}" rel="stylesheet">
-        <link href="{{ URL::asset('css/meetings.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/houses.css') }}" rel="stylesheet">
     </head>
         
-        @section('navbar')
-            @parent
-        @stop
+    @section('navbar')
+        @parent
+    @stop
 
     <body>
         @section('content')
-        <div id="meetingsbar">
+        <div id="housesbar">
             <div class="row pt-2 pl-5 mainbar">
                 <div class="col-sm-12">
                     <h1>Sober Living! - {{ $house_filter }}</h1>
                     <div class="thin-hr mb-4"></div><br>
                     <div class="row">
                         <div class="col-sm-auto d-block">
-                            <div id="elem" class="btn-group" role="group" aria-label="Basic example">
+                            <div id="btn-group-houses" class="btn-group" role="group" aria-label="Basic example">
                                 <a href="/houses" class="btn btn-xs btn-info pull-left">All</a><br>
                                 <a href="/houses/filter/mens" class="btn btn-xs btn-info pull-left">Men's</a><br>
                                 <a href="/houses/filter/womens" class="btn btn-xs btn-info pull-left">Women's</a><br>

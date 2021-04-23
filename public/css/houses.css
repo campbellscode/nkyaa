@@ -1,0 +1,53 @@
+#housesbar {
+    overflow: hidden;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 998;
+}
+
+body {
+    background-image: url("/images/holding-hands-1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+h1 {
+    color: black;
+}
+
+.opacity-85 {
+    opacity: 0.85;
+}
+
+.card-shadow {
+    box-shadow: 5px 5px 5px black;
+}
+
+.btn.btn-info {
+    color: #212529;
+    background-color: #6cb2eb;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn.btn-info:hover, .btn.btn-info:focus, .btn.btn-info:active { 
+    color: white;
+    background-color: black;
+    transform: translateY(4px);
+}
+
+
+
