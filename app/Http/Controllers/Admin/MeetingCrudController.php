@@ -43,7 +43,7 @@ class MeetingCrudController extends CrudController
     {
         //CRUD::column('id');
         CRUD::column('name');
-        CRUD::column('type'); 
+        //CRUD::column('type'); 
         
         $this->crud->addColumn('days');
 
@@ -87,7 +87,7 @@ class MeetingCrudController extends CrudController
 
         //CRUD::column('id');
         CRUD::column('name');
-        CRUD::column('type');
+        //CRUD::column('type');
 
         $this->crud->addColumn('days');
 
@@ -129,7 +129,7 @@ class MeetingCrudController extends CrudController
 
         //CRUD::field('id');
         CRUD::field('name');
-        CRUD::field('type');
+        //CRUD::field('type');
         CRUD::field('days');
 
              //$this->crud->addField([

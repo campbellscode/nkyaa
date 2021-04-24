@@ -69,16 +69,14 @@
                 <div class="card opacity-85 mr-3 mb-3">
                     <!-- <img class="card-img-top" src="{{url('/images/holding-hands.jpg')}}" alt="Card image cap"> -->
                     <div class="card-body card-shadow">
-                        <h5 class="card-title">{{ $meeting->name }}</h5>
-                        <p class="card-text">
-                            <li>{{ $meeting->type }}</li>
-                            <li>{{ $meeting->days }}</li>
-                            <li>{{ $meeting->time }}</li> 
-                            <li>{{ $meeting->address }}</li>
-                            <li>{{ $meeting->city }}</li>
-                            <li>{{ $meeting->state }}</li>
-                            <li>{{ $meeting->zip }}</li>                
-                        </p>
+                        <h5 class="card-title">{{ $meeting->name }}</h5>                        
+                        <ul class="fa-ul card-text">
+                            <!-- <li>{{ $meeting->type }}</li> -->
+                            <li><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp; {{ $meeting->days }}</li>
+                            <li><i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp; {{ $meeting->time }}</li> 
+                            <li><i class="fas fa-map-marker-alt fa-fw" aria-hidden="true"></i>&nbsp; {{ $meeting->address }}</li>
+                            <li><i class="far fa-empty-set fa-fw" aria-hidden="true"></i>&nbsp; {{ $meeting->city }}, {{ $meeting->state }} {{ $meeting->zip }}</li>
+                        </ul>
                         <a href="#" class="show-button btn btn-primary">Show up, Show out!</a>
                     </div>
                 </div>
