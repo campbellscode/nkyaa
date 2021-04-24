@@ -68,30 +68,29 @@
                     <!-- <img class="card-img-top" src="{{url('/images/holding-hands.jpg')}}" alt="Card image cap"> -->
                     <div class="card-body card-shadow">
                         <h5 class="card-title">{{ $house->name }}</h5>
-                        <p class="card-text">
+                        <ul class="fa-ul card-text">
                         @if($house->type == 0)
-                                <li>Men's</li>
+                                <li><i class="fas fa-male fa-fw" aria-hidden="true"></i>&nbsp; Men's</li>
                             @elseif($house->type == 1)
-                                <li>Women's</li>
+                            <li><i class="fas fa-female fa-fw" aria-hidden="true"></i>&nbsp; Women's</li>
                             @endif                            
-                            <li>{{ $house->city }}</li>
                             @if($house->state == 0)
-                                <li>KY</li>
+                                <li><i class="fas fa-map-marker-alt fa-fw" aria-hidden="true"></i>&nbsp; {{ $house->city }}, KY</li>
                             @elseif($house->state == 1)
-                                <li>OH</li>
-                            @endif                              
-                            <li>{{ $house->phone }}</li>
+                                <li><i class="fas fa-map-marker-alt fa-fw" aria-hidden="true"></i>&nbsp; {{ $house->city }}, OH</li>
+                            @endif           
+                            <li><i class="fas fa-phone fa-fw" aria-hidden="true"></i>&nbsp; {{ $house->phone }}</li>               
                             @if($house->busline == 0)
-                                <li>Busline: No</li>
+                                <li><i class="fas fa-bus fa-fw" aria-hidden="true"></i>&nbsp; Busline - No</li>
                             @elseif($house->busline == 1)
-                                <li>Busline: Yes</li>
+                                <li><i class="fas fa-bus fa-fw" aria-hidden="true"></i>&nbsp; Busline - Yes</li>
                             @endif   
                             @if($house->mat == 0)
-                                <li>Accepts MAT: No</li>
+                                <li><i class="fas fa-pills fa-fw" aria-hidden="true"></i>&nbsp; MAT - No</li>
                             @elseif($house->mat == 1)
-                                <li>Accepts MAT: Yes</li>
-                        @endif                          
-                        </p>
+                                <li><i class="fas fa-pills fa-fw" aria-hidden="true"></i>&nbsp; MAT - Yes</li>                        
+                            @endif                          
+                        </ul>
                         <a href="#" class="show-button btn btn-primary">Directions</a>
                     </div>
                 </div>
