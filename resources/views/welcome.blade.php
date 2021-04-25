@@ -1,5 +1,10 @@
 @extends('layouts.navbar')
 
+<?php 
+    use App\Http\Controllers\DailyReflectionsController;     
+    use App\Http\Controllers\ReadingsController;
+?>
+
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -7,18 +12,19 @@
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{ asset('js/welcome.js') }}" defer></script>
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/master.css') }}" rel="stylesheet">
         <link href="{{ asset('css/welcome.css') }}" rel="stylesheet">
     </head>
-    
+
+    <body onload="set_initial_title()">
     @section('navbar')
         @parent
     @stop
 
-    <body>
     @section('content')
             <div id="welcomebar">
                 <div class="row pt-2 pl-5 mainbar">
@@ -28,38 +34,43 @@
                         <div class="row">
                             <div class="col-sm-auto d-block">
                                 <div id="btn-group-bar" class="btn-group" role="group" aria-label="Basic example">
-                                <a href="/meetings" class="btn btn-xs btn-starter pull-left">Daily Reflection</a><br>
-                                <a href="/meetings/filter/daily" class="btn btn-xs btn-info pull-left">Preamble</a><br>
-                                <a href="/meetings/filter/Monday" class="btn btn-xs btn-info pull-left">How It Works</a><br>
-                                <a href="/meetings/filter/Tuesday" class="btn btn-xs btn-info pull-left">12 Steps</a><br>
-                                <a href="/meetings/filter/Wednesday" class="btn btn-xs btn-info pull-left">12 Traditions</a><br>
-                                <a href="/meetings/filter/Friday" class="btn btn-xs btn-info pull-left">Bill's Story</a><br>
-                                <a href="/meetings/filter/Saturday" class="btn btn-xs btn-info pull-left">Dr. Bob's Nm</a><br>
-                                <a href="/meetings/filter/Thursday" class="btn btn-xs btn-info pull-left">Responsibility</a><br>
+                                <a onclick="load_daily_reflection()" class="btn btn-xs btn-starter pull-left">Daily Reflection</a><br>
+                                <a onclick="load_preamble()" class="btn btn-xs btn-info pull-left">Preamble</a><br>
+                                <a onclick="load_how_it_works()" class="btn btn-xs btn-info pull-left">How It Works</a><br>
+                                <a onclick="load_steps()" class="btn btn-xs btn-info pull-left">12 Steps</a><br>
+                                <a onclick="load_traditions()" class="btn btn-xs btn-info pull-left">12 Traditions</a><br>
+                                <a onclick="load_promises()" class="btn btn-xs btn-info pull-left">Promises</a><br>
+                                <a onclick="load_responsibility()" class="btn btn-xs btn-info pull-left">Responsibility</a><br>
                                 </div>
                             </div>
-                            <!--<div class="col-sm-auto d-none d-md-block">
-                                <div class="btn-group" role="group" aria-label="Basic example">
-                                    <a href="/meetings/filter/daily" class="btn btn-xs btn-info pull-right">In-Person</a><br>
-                                    <a href="/meetings/filter/mon" class="btn btn-xs btn-info pull-left">Online</a><br>
-                                </div>            
-                            </div>
-                            <div class="col-sm-auto d-none d-lg-none d-xl-block">
-                                <div class="btn-group" role="group" aria-label="Basic example">
-                                    <a href="/meetings/filter/mon" class="btn btn-xs btn-info pull-left">Beginner</a><br>
-                                    <a href="/meetings/filter/daily" class="btn btn-xs btn-info pull-right">Discussion</a><br>
-                                    <a href="/meetings/filter/mon" class="btn btn-xs btn-info pull-left">Ticket</a><br>
-                                    <a href="/meetings/filter/daily" class="btn btn-xs btn-info pull-right">Big Book</a><br>
-                                    <a href="/meetings/filter/mon" class="btn btn-xs btn-info pull-left">12 & 12</a><br>
-                                    <a href="/meetings/filter/daily" class="btn btn-xs btn-info pull-right">Speaker</a><br>
-                                </div>            
-                            </div>-->
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div> 
+            
+            <div class="d-md-flex h-md-100">            
+                <!-- First Half -->
+                <div class="col-md-6 p-0 bg-white h-md-100 pt-2 pl-5">
+                    <h1 id="mainTitle"></h1>
+                    <div class="d-md-flex h-100 pl-5 pr-5">
+                        <div id="welcome-left" class="pt-3">
+                            @include('subviews.dailyreflections')
+                        </div>
+                    </div>
+                </div>
 
-            <div class="row pt-2 pl-5 pr-5 white-bg">
+                <!-- Second Half -->
+                <div class="col-md-6 p-0 right-half h-md-100">
+                    <h1></h1>
+                    <div class="text-white d-md-flex align-items-center h-md-100 p-5 text-center justify-content-center">
+                        <div class="pt-5 pb-5">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="row pt-2 pl-5 pr-5 white-bg">
                 <div class="col-xl-5">
                 <h1>Daily Reflection</h1>
                     <div class="bg-white opacity-3 rounded m-4 p-3">                        
@@ -70,7 +81,7 @@
                 <div class="col-xl-7 pt-2">
                     <h1>NKY AA Central Office</h1>
                 </div>
-            </div>               
+            </div> -->               
         @stop
     </body>
 </html>

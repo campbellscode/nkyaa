@@ -69,7 +69,7 @@
                     <div class="card-body card-shadow">
                         <h5 class="card-title">{{ $house->name }}</h5>
                         <ul class="fa-ul card-text">
-                        @if($house->type == 0)
+                            @if($house->type == 0)
                                 <li><i class="fas fa-male fa-fw" aria-hidden="true"></i>&nbsp; Men's</li>
                             @elseif($house->type == 1)
                             <li><i class="fas fa-female fa-fw" aria-hidden="true"></i>&nbsp; Women's</li>

@@ -7,6 +7,10 @@
     <head>
         @section('title', 'Meetings')
     
+        <!-- Scripts -->
+        <script src="{{ asset('js/app.js') }}" defer></script>
+        
+        <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link href="{{ asset('css/master.css?v=').time() }}" rel="stylesheet">
         <link href="{{ asset('css/meetings.css') }}" rel="stylesheet"> 

@@ -187,7 +187,7 @@ nav .navbar-nav li a{
 }
 
 /* For xs devices */
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 980px) {  
   /* Welcome screen buttons */
   #btn-group-sm-xs {
     display: block;

@@ -17,14 +17,40 @@ Route::get('/', function () {
     return view('landing');
 });
 
-Route::get('/welcome', function () {
+// Load daily reflection automatically on welcome sceen.
+Route::get('/welcome', 'ReadingsController@loadDailyRef', function () {
     return view('welcome');
 });
+
+// Welcome screen button routes.
+Route::get('/welcome/dailyreflection', function () {
+    return view('subviews.dailyreflections');
+});
+Route::get('/welcome/preamble', function () {
+    return view('subviews.preamble');
+});
+Route::get('/welcome/howitworks', function () {
+    return view('subviews.howitworks');
+});
+Route::get('/welcome/steps', function () {
+    return view('subviews.steps');
+});
+Route::get('/welcome/traditions', function () {
+    return view('subviews.traditions');
+});
+Route::get('/welcome/promises', function () {
+    return view('subviews.promises');
+});
+Route::get('/welcome/responsibility', function () {
+    return view('subviews.responsibility');
+});
+
+
+
 
 Route::get('/meetings', 'MeetingsController@index', function () {
     return view('meetings');
 });
-
 // Meeting day filters.
 Route::get('/meetings/filter/Monday', 'MeetingsController@filterMon', function () {
     return view('meetings');

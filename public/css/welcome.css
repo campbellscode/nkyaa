@@ -7,20 +7,13 @@
     z-index: 998;
 }
 
-#leftHalf {    
-    position: absolute;
-    left: 0px;
- }
-
- #rightHalf {    
-    background: url("/images/bw-central-office-window.jpg");
+.right-half { 
+    overflow: hidden;
+    background: url("/images/ss-central-office-window.png"); 
     background-repeat: no-repeat;  
     background-size: contain;  
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0px;
- }
+    height: 100vh;
+}
 
 .btn.btn-starter {
     color: #212529;
@@ -61,6 +54,8 @@
 
 /* For sm, xs devices */
 @media only screen and (min-width: 0px)and (max-width: 660px) {
+    .h-md-100 { height: 100vh; }
+
     /* Welcome screen left and right divs */
     #content-md-sm-xs {
         display: block;

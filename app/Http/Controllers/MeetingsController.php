@@ -35,8 +35,7 @@ class MeetingsController extends Controller
         $meetings = Meeting::where('days', 'LIKE', strtolower('%'.$day.'%'))->get();
         
         // Update the view with filtered results.
-        return view('meetings', compact('meetings', 'meeting_day'));
-        
+        return view('meetings', compact('meetings', 'meeting_day'));        
     }
 
     public function filterTue() {
