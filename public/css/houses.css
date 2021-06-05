@@ -42,7 +42,6 @@ h1 {
     border: none;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 0;
-    width: 10rem !important;
 }
 
 .btn.btn-starter:hover, .btn.btn-starter:focus, .btn.btn-starter:active  { 
@@ -60,13 +59,22 @@ h1 {
     outline: none;
     border: none;
     border-radius: 15px;
-    width: 8rem !important;
+    width: 9rem !important;
 }
 
 .btn.btn-info:hover, .btn.btn-info:focus, .btn.btn-info:active { 
     color: white;
     background-color: black;
     transform: translateY(4px);
+}
+
+/* For landscape oriented devices */
+@media only screen and (orientation: landscape) {
+    .btn.btn-info, .btn.btn-starter, .btn.btn-starter-second-row {
+        font-size: 15px !important;
+        width: 8rem !important;
+        height: 2rem;
+    }
 }
 
 

@@ -27,8 +27,8 @@
                         <div class="col-sm-auto d-block">
                             <div id="btn-group-bar" class="btn-group" role="group" aria-label="Basic example">
                                 <a href="/houses" class="btn btn-xs btn-starter pull-left">All</a><br>
-                                <a href="/houses/filter/mens" class="btn btn-xs btn-info pull-left">Men's</a><br>
-                                <a href="/houses/filter/womens" class="btn btn-xs btn-info pull-left">Women's</a><br>
+                                <a href="/houses/filter/mens" class="btn btn-xs btn-info pull-left"><i class="fas fa-male fa-fw" aria-hidden="true"></i>&nbsp; M</a><br>
+                                <a href="/houses/filter/womens" class="btn btn-xs btn-info pull-left"><i class="fas fa-female fa-fw" aria-hidden="true"></i>&nbsp; F</a><br>
                                 <a href="/houses/filter/ky" class="btn btn-xs btn-info pull-left">KY</a><br>
                                 <a href="/houses/filter/oh" class="btn btn-xs btn-info pull-left">OH</a><br>
                                 <a href="/houses/filter/busline" class="btn btn-xs btn-info pull-left">Busline</a><br>

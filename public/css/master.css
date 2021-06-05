@@ -171,12 +171,15 @@ nav .navbar-nav li a{
 }
 
 /* Hide based element based on orientation */
-@media (orientation:landscape) {
+
+/* FOR PORTRAIT */
+@media (orientation:landscape) and (max-width: 980px) {
   .hide-on-landscape {
       display: none !important;
   }
 }
 
+/* FOR LANDSCAPE */
 @media (orientation:portrait) {
   .hide-on-portrait {
       display: none !important;
@@ -228,6 +231,9 @@ nav .navbar-nav li a{
   nav .navbar-nav li a{
     font-size: 4.5rem !important;
   }
+  .dropdown-menu {
+    text-align: center;
+  }
   .navbar-toggler-icon{
     font-size: 3rem;
   }
@@ -251,7 +257,7 @@ nav .navbar-nav li a{
     height: 100px !important;
     width: 100px !important;  
   }
-
+ 
   h1 {
     font-size: 80px;
   }
@@ -314,7 +320,7 @@ nav .navbar-nav li a{
     font-size: 30px;
   }
   nav .navbar-nav li a{
-    font-size: 1rem !important;
+    font-size: 1.3rem !important;
   }
   .navbar-toggler-icon{
     font-size: 1.5rem;

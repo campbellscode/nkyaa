@@ -7,3 +7,4 @@ $(document).click(function(event) {
 $(document).ready(function() {
     $(".dropdown-toggle").dropdown();
 });
+
