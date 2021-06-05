@@ -67,5 +67,12 @@ h1 {
     transform: translateY(4px);
 }
 
+/* For landscape oriented devices */
+@media only screen and (orientation: landscape) {
+    .btn.btn-info, .btn.btn-starter, .btn.btn-starter-second-row {
+        font-size: 15px !important;        
+        height: 2rem;
+    }
+}
 
 
