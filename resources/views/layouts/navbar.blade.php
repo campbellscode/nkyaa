@@ -57,9 +57,9 @@ $weekday = now()->format('l');
                         Non-AA Resources
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a style="font-size: 3.3rem !important" class="dropdown-item" href="/houses">Sober Living</a>
-                        <a style="font-size: 3.3rem !important; color:grey !important;" class="dropdown-item disabled" href="/clubhouses">Clubhouses</a>
-                        <a style="font-size: 3.3rem !important; color:grey !important;" class="dropdown-item disabled" href="/resources">Community Resources</a>
+                        <a class="dropdown-item" href="/houses">Sober Living</a>
+                        <a class="dropdown-item disabled" href="/clubhouses">Clubhouses</a>
+                        <a class="dropdown-item disabled" href="/resources">Community Resources</a>
                         <!--<div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Something else here</a>-->
                     </div>
