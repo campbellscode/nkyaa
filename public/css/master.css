@@ -251,12 +251,24 @@ nav .navbar-nav li a{
   }
 
   h1 {
-    font-size: 95px;
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 70px;
+  }
+
+  h4 {
+    font-size: 60px;
+  }
+
+  h5 {
+    font-size: 50px;
   }
 
   /* Filtering button bar */
   #btn-group-bar a {
-    font-size: 35px;
+    font-size: 37px;
   }  
   .btn {
     width: 95px;
@@ -344,11 +356,11 @@ nav .navbar-nav li a{
 
   /* Filtering button bar */
   #btn-group-bar a {
-    font-size: 15px;
+    font-size: 25px;
   }  
   .btn {
     width: 80px;
-    height: 40px;
+    height: 50px;
   } 
 
   /* Cards */

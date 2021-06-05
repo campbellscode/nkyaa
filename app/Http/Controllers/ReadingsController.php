@@ -44,6 +44,4 @@ class ReadingsController extends Controller
         // Return the meetings view and pass the $meetings variable to the view.
         return view('welcome', compact('_mainTitle', 'title', 'quote', 'reading'));
     }
-
-
 }

@@ -28,19 +28,28 @@
     @section('content')
             <div id="welcomebar">
                 <div class="row pt-2 pl-5 mainbar">
-                    <div class="col-sm-12">
+                    <div class="col-lg-12">
                         <h1>NKY AA Central Office</h1>
                         <div class="thin-hr mb-4"></div><br>
                         <div class="row">
-                            <div class="col-sm-auto d-block">
+                            <div class="col-lg-auto d-block">
                                 <div id="btn-group-bar" class="btn-group" role="group" aria-label="Basic example">
-                                <a onclick="load_daily_reflection()" class="btn btn-xs btn-starter pull-left">Daily Reflection</a><br>
-                                <a onclick="load_preamble()" class="btn btn-xs btn-info pull-left">Preamble</a><br>
-                                <a onclick="load_how_it_works()" class="btn btn-xs btn-info pull-left">How It Works</a><br>
-                                <a onclick="load_steps()" class="btn btn-xs btn-info pull-left">12 Steps</a><br>
-                                <a onclick="load_traditions()" class="btn btn-xs btn-info pull-left">12 Traditions</a><br>
-                                <a onclick="load_promises()" class="btn btn-xs btn-info pull-left">Promises</a><br>
-                                <a onclick="load_responsibility()" class="btn btn-xs btn-info pull-left">Responsibility</a><br>
+                                    <a onclick="load_daily_reflection()" class="btn btn-xs btn-starter pull-left">Reflect</a><br>
+                                    <a onclick="load_preamble()" class="btn btn-xs btn-info pull-left">Preamble</a><br>
+                                    <a onclick="load_how_it_works()" class="btn btn-xs btn-info pull-left">How It Works</a><br>
+                                    <a onclick="load_steps()" class="btn btn-xs btn-info pull-left">12 Steps</a><br>
+                                    <a onclick="load_traditions()" class="btn btn-xs btn-info pull-left">12 Traditions</a><br>
+                                    <a onclick="load_promises()" class="btn btn-xs btn-info pull-left">Promises</a><br>
+                                    <a onclick="load_responsibility()" class="btn btn-xs btn-info pull-left">Responsibility</a><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-none d-md-block d-lg-none">
+                            <div class="col-md-auto d-block">
+                                <div id="btn-group-bar" class="btn-group" role="group" aria-label="Basic example">
+                                    <a onclick="load_traditions()" class="btn btn-xs btn-starter-second-row pull-left">12 Traditions</a><br>
+                                    <a onclick="load_promises()" class="btn btn-xs btn-info pull-left">Promises</a><br>
+                                    <a onclick="load_responsibility()" class="btn btn-xs btn-info pull-left">Responsibility</a><br>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +59,7 @@
             
             <div class="d-md-flex h-md-100">            
                 <!-- First Half -->
-                <div class="col-md-6 p-0 bg-white h-md-100 pt-2 pl-5">
+                <div class="col-xs-12 col-lg-6 p-0 h-md-100 pt-2 pl-5">
                     <h1 id="mainTitle"></h1>
                     <div class="d-md-flex h-100 pl-5 pr-5">
                         <div id="welcome-left" class="pt-3">
@@ -60,7 +69,7 @@
                 </div>
 
                 <!-- Second Half -->
-                <div class="col-md-6 p-0 right-half h-md-100">
+                <div class="col-md-6 d-none d-lg-block p-0 right-half h-md-100">
                     <h1></h1>
                     <div class="text-white d-md-flex align-items-center h-md-100 p-5 text-center justify-content-center">
                         <div class="pt-5 pb-5">
