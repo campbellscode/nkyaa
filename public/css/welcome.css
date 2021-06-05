@@ -74,17 +74,9 @@
 /* For sm, xs devices - KEEPS BUTTON BAR STICKY */
 @media only screen and (min-width: 0px)and (max-width: 660px) {
     .h-md-100 { height: 100vh; }
-
-    /* Welcome screen left and right divs */
-    #content-md-sm-xs {
-        display: block;
-    }
-    #content-xl-lg {
-        display: none;
-    }
 }
 
-/* Sizing buttons for portrait and landscape on mobile */
+/* Sizing buttons for portrait mode on mobile */
 @media only screen and (max-width: 980px) {  
     .btn.btn-info {
         width: 16rem !important;
@@ -95,13 +87,12 @@
     }
 }
 
-/* For lg, md devices */
-@media only screen and (min-width: 661px) and (max-width: 1330px) {
-    /* Welcome screen left and right divs */
-    #content-md-sm-xs {
-        display: none;
+/* For landscape oriented devices */
+@media only screen and (orientation: landscape) {
+    .btn.btn-info, .btn.btn-starter, .btn.btn-starter-second-row {
+        font-size: 15px !important;
+        width: 8rem !important;
+        height: 2rem;
     }
-    #content-xl-lg {
-        display: block;
-    }
-  }
+}
+

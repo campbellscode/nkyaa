@@ -60,6 +60,7 @@ h1 {
     outline: none;
     border: none;
     border-radius: 15px;
+    width: 8rem !important;
 }
 
 .btn.btn-info:hover, .btn.btn-info:focus, .btn.btn-info:active { 

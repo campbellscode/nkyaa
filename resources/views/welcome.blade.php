@@ -44,7 +44,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row d-none d-md-block d-lg-none">
+                        <div class="row d-none d-md-block d-lg-none hide-on-landscape">
                             <div class="col-md-auto d-block">
                                 <div id="btn-group-bar" class="btn-group" role="group" aria-label="Basic example">
                                     <a onclick="load_traditions()" class="btn btn-xs btn-starter-second-row pull-left">12 Traditions</a><br>

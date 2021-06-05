@@ -170,6 +170,19 @@ nav .navbar-nav li a{
   opacity:1 !important;
 }
 
+/* Hide based element based on orientation */
+@media (orientation:landscape) {
+  .hide-on-landscape {
+      display: none !important;
+  }
+}
+
+@media (orientation:portrait) {
+  .hide-on-portrait {
+      display: none !important;
+  }
+}
+
 .thin-hr {
   margin-top:0;
   margin-bottom:0;
@@ -188,17 +201,6 @@ nav .navbar-nav li a{
 
 /* For xs devices */
 @media only screen and (max-width: 980px) {  
-  /* Welcome screen buttons */
-  #btn-group-sm-xs {
-    display: block;
-  }
-  #btn-group-lg-md {
-    display: none;
-  }
-  #btn-group-xl {
-    display: none;
-  }
-
   /* Navbar */
   #expandedSearch {
     display: none;
@@ -277,7 +279,7 @@ nav .navbar-nav li a{
 
   /* Cards */
   .card {
-    width: 56rem;  
+    width: 56rem !important;  
   }
   .card-title {
     font-size: 60px;  
@@ -297,17 +299,6 @@ nav .navbar-nav li a{
 
 /* For sm, md/landscape oriented devices */
 @media only screen and (orientation: landscape) {
-  /* Welcome screen buttons */
-  #btn-group-sm-xs {
-    display: none;
-  }
-  #btn-group-lg-md {
-    display: block;
-  }
-  #btn-group-xl {
-    display: none;
-  }
-
   /* Navbar */
   #expandedSearch {
     display: block;
@@ -354,6 +345,18 @@ nav .navbar-nav li a{
     font-size: 45px;
   }
 
+  h2 {
+    font-size: 35px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+
+  h5 {
+    font-size: 25px;
+  }
+
   /* Filtering button bar */
   #btn-group-bar a {
     font-size: 25px;
@@ -365,7 +368,7 @@ nav .navbar-nav li a{
 
   /* Cards */
   .card {
-    width: 18rem;  
+    width: 20rem !important;  
   }
   .card-title {
     font-size: 25px;  
@@ -385,16 +388,6 @@ nav .navbar-nav li a{
 
 /* For xl devices */
 @media only screen and (min-width: 1201px) {
-  #btn-group-sm-xs {
-    display: none;
-  }
-  #btn-group-lg-md {
-    display: none;
-  }
-  #btn-group-xl {
-    display: inline;
-  }
-  
   /* Navbar */
   #expandedSearch {
     display: block;

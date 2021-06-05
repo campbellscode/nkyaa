@@ -42,7 +42,6 @@ h1 {
     border: none;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 0;
-    width: 10rem !important;
 }
 
 .btn.btn-starter:hover, .btn.btn-starter:focus, .btn.btn-starter:active  { 
